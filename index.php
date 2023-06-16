@@ -40,13 +40,6 @@
     <!-- Template Main CSS File -->
     <link href="./assets/css/style.css" rel="stylesheet" />
 
-    <!-- =======================================================
-  * Template Name: SoftLand
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
@@ -64,12 +57,36 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="./index.php" class="active">BERANDA</a></li>
-            <li><a href="#calculator">KALKULATOR</a></li>
+            <li>
+              <?php
+               session_start();
+              if(!$_SESSION){
+            ?>
+            <a href="./Login/login.php">KALKULATOR</a>
+            <?php
+              }elseif($_SESSION['id']){
+            ?>
+            <a href="#calculator">KALKULATOR</a>
+            <?php        
+              }
+            ?>
+            </li>
             <li><a href="./about/about.php">TENTANG</a></li>
             <li><a href="./articles/articlepage.php">ARTIKEL</a></li>
-            <li><a href="./aksi/aksi.php">AKSI LINGKUNGAN</a></li>
+            <li>
+              <?php
+              if(!$_SESSION){
+            ?>
+            <a href="./Login/login.php">AKSI LINGKUNGAN</a>
             <?php
-              session_start();
+              }elseif($_SESSION['id']){
+            ?>
+            <a href="./aksi/aksi.php">AKSI LINGKUNGAN</a>
+            <?php        
+              }
+            ?>
+            </li>
+            <?php
               if(!$_SESSION){
             ?>
             <li>

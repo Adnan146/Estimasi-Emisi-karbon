@@ -64,7 +64,7 @@ if(isset($_POST["submit"])){
     </div>
     <div class="links">
       Sudah memiliki akun? <a href="registration.php">Daftar Now</a>
-      Kembali ke halaman utama?<a href="../index.ph.php">Beranda</a>
+      Kembali ke halaman utama?<a href="../index.php">Beranda</a>
     </div>
     </form>
   </div>
