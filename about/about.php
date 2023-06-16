@@ -53,11 +53,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="../index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link active">About</a>
-                    <a href="../articles/articlepage.html" class="nav-item nav-link">Artikel</a>
+                    <a href="../index.php" class="nav-item nav-link">Home</a>
+                    <a href="about.php" class="nav-item nav-link active">About</a>
+                    <a href="../articles/articlepage.php" class="nav-item nav-link">Artikel</a>
                     <a href="calculator.html" class="nav-item nav-link">Carbon Calculator</a>
-                    <a href="contact.html" class="nav-item nav-link">Aksi Lingkungan</a>
+                    <a href="../aksi/aksi.php" class="nav-item nav-link">Aksi Lingkungan</a>
                 </div>
             </div>
         </nav>

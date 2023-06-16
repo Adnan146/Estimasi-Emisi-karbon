@@ -57,16 +57,29 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="../index.html">BERANDA</a></li>
+            <li><a href="../index.php">BERANDA</a></li>
             <li><a href="#">KALKULATOR</a></li>
-            <li><a href="../about/about.html">ABOUT</a></li>
-            <li><a href="/articles/articlepage.html">ARTIKEL</a></li>
-            <li><a href="../aksi/aksi.html">AKSI LINGKUNGAN</a></li>
+            <li><a href="../about/about.php">ABOUT</a></li>
+            <li><a href="/articles/articlepage.php">ARTIKEL</a></li>
+            <li><a href="../aksi/aksi.php">AKSI LINGKUNGAN</a></li>
+            <?php
+              session_start();
+              if(!$_SESSION){
+            ?>
             <li>
-              <button type="button" class="btn btn-success rounded-5">
+              <a href="Login/login.php"><button type="button" class="btn btn-success rounded-5">
                 LOGIN
-              </button>
+              </button></a>
           </li>
+          <?php
+              }elseif($_SESSION['level'] == "user"){
+            ?>
+             <a href="Login/logout.php"><button type="button" class="btn btn-success rounded-5">
+                LOGOUT
+              </button></a>
+            <?php
+            }
+            ?>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

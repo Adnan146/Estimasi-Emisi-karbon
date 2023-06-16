@@ -15,7 +15,7 @@ if(isset($_POST["submit"])){
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
       $_SESSION['status'] = "login";
-      header("location:index.php");
+      header("location:../index.php");
    
     }else if ($row['level']=="admin"){
       $_SESSION['usernameemail'] = $usernameemail;
