@@ -210,12 +210,12 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/adnan.png" alt="">
+                            <img class="img-fluid" src="img/adnan.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/Adnan146"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/zuzlifatul-adnan-a5a345271/"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fourz_adnan/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square mx-1" href="https://github.com/Adnan146"><i class="fab fa-github" target="_blank"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/zuzlifatul-adnan-a5a345271/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fourz_adnan/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Zuzlifatul Adnan</h5>
@@ -229,9 +229,9 @@
                             <img class="img-fluid" src="img/dwiki.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/dwikief44"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/dwiki-febriyanto-815909279/"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/kzrnty_/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square mx-1" href="https://github.com/dwikief44" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/dwiki-febriyanto-815909279/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/kzrnty_/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Dwiki Febriyanto</h5>
@@ -245,9 +245,9 @@
                             <img class="img-fluid" src="img/febryan.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/kocpiepait"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="http://linkedin.com/in/febryan-barahama-ab908527a"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fbryan.b/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square mx-1" href="https://github.com/kocpiepait" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square mx-1" href="http://linkedin.com/in/febryan-barahama-ab908527a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fbryan.b/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Febryan Luther Barahama</h5>
@@ -261,9 +261,9 @@
                             <img class="img-fluid" src="img/sany.jpeg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/sanysantiastry"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="https://id.linkedin.com/in/sany-santiastry-146a2a20b"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/sas.juyeon/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square mx-1" href="https://github.com/sanysantiastry" target="_blank"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square mx-1" href="https://id.linkedin.com/in/sany-santiastry-146a2a20b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/sas.juyeon/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Sany Santiastry</h5>
