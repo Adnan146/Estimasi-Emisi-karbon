@@ -85,9 +85,9 @@
           <li><a href="../index.php" >BERANDA</a></li>
             <li>
               <?php
-               session_start();
-              if(!$_SESSION){
-            ?>
+                session_start();
+                if(!$_SESSION){
+              ?>
             <a href="../Login/login.php">KALKULATOR</a>
             <?php
               }elseif($_SESSION['id']){
@@ -97,7 +97,7 @@
               }
             ?>
             </li>
-            <li><a href="./about/about.php" class="active" >TENTANG</a></li>
+            <li><a href="./about.php" class="active" >TENTANG</a></li>
             <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
             <li>
               <?php
@@ -117,7 +117,7 @@
             ?>
             <li>
             <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
-                LOGIN
+                MASUK
               </button>
               </li>
           <?php
@@ -125,7 +125,7 @@
             ?>
              <li>
              <button type="button" class="btn btn-success rounded-5 logout" onclick="window.location.href='../Login/logout.php'">
-                LOGOUT
+                KELUAR
               </button>
               </li>
             <?php

@@ -91,7 +91,7 @@
             ?>
             <li>
               <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='./Login/login.php'">
-                LOGIN
+                MASUK
               </button>
               </li>
           <?php
@@ -99,7 +99,7 @@
             ?>
              <li>
              <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='Login/logout.php'">
-                LOGOUT
+                KELUAR
               </button>
               </li>
             <?php
@@ -188,7 +188,7 @@
                 <div class="d-flex">
                   <div class="article-icon">
                     <img
-                      src="./assets/img/article-icon1.png"
+                      src="./assets/img/article-icon2.png"
                       alt="Apa itu Carbon"
                     />
                   </div>
@@ -205,7 +205,7 @@
                 <div class="d-flex">
                   <div class="article-icon">
                     <img
-                      src="./assets/img/article-icon1.png"
+                      src="./assets/img/article-icon2.png"
                       alt="Apa itu Carbon"
                     />
                   </div>
@@ -225,7 +225,7 @@
                 <div class="d-flex">
                   <div class="article-icon">
                     <img
-                      src="./assets/img/article-icon1.png"
+                      src="./assets/img/article-icon2.png"
                       alt="Apa itu Carbon"
                     />
                   </div>

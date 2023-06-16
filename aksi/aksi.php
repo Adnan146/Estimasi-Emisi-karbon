@@ -75,14 +75,14 @@
             ?>
             <li>
               <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
-                LOGIN
+                MASUK
               </button>
           </li>
           <?php
               }elseif($_SESSION['level'] == "user"){
             ?>
              <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/logout.php'">
-                LOGOUT
+                KELUAR
               </button>
             <?php
             }
