@@ -88,6 +88,11 @@ body {
     justify-content: center;
     border-radius: 0px;
 }
+
+.about {
+    margin-top: 80px;
+}
+
 h1,
 h2,
 h3,
@@ -434,7 +439,7 @@ p {
 }
 
 .cards .bg-blue {
-    background-color: #94ccfc;
+    background-color: #fdd168;
 }
 
 .cards .border {

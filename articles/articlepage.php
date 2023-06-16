@@ -57,13 +57,37 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="../index.php">BERANDA</a></li>
-            <li><a href="#">KALKULATOR</a></li>
-            <li><a href="../about/about.php">TENTANG</a></li>
-            <li><a href="/articles/articlepage.php" class="active">ARTIKEL</a></li>
-            <li><a href="../aksi/aksi.php">AKSI LINGKUNGAN</a></li>
+          <li><a href="../index.php" >BERANDA</a></li>
+            <li>
+              <?php
+               session_start();
+              if(!$_SESSION){
+            ?>
+            <a href="../Login/login.php">KALKULATOR</a>
             <?php
-              session_start();
+              }elseif($_SESSION['id']){
+            ?>
+            <a href="#calculator">KALKULATOR</a>
+            <?php        
+              }
+            ?>
+            </li>
+            <li><a href="../about/about.php">TENTANG</a></li>
+            <li><a href="./articles/articlepage.php" class="active">ARTIKEL</a></li>
+            <li>
+              <?php
+              if(!$_SESSION){
+            ?>
+            <a href="../Login/login.php">AKSI LINGKUNGAN</a>
+            <?php
+              }elseif($_SESSION['id']){
+            ?>
+            <a href="../aksi/aksi.php">AKSI LINGKUNGAN</a>
+            <?php        
+              }
+            ?>
+            </li>
+            <?php
               if(!$_SESSION){
             ?>
             <li>
