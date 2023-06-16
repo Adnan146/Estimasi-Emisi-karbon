@@ -33,6 +33,7 @@
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="article.css">
 
     <!-- =======================================================
   * Template Name: SoftLand
@@ -117,16 +118,59 @@
       <div class="article-page d-block ">
         <div
           class="article-heading-fluid bg-primary opacity-75 d-flex position-relative"
-          style="height: 200px"
+          style="justify-content: center; height: 200px"
         >
           <h1
             class="text-light text-start fs-3 position-absolute bottom-0 m-5"
+            style="justify-content:center;"
           >
-            - Welcome To Our Article -
+            - Selamat Datang di Halaman Artikel EsEmKa -
           </h1>
         </div>
+        
+        <div class="main-content">
+      <section class="artikel">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
+                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
+                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
+                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn">Selengkapnya</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
 
-        <div class="container p-5 " id="article-page">
+        <!-- <div class="container p-5 " id="article-page">
           <div class="row grid gap-5">
             <div class="col-7">
               <div class="article-conten border border-info-subtle shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -196,7 +240,7 @@
               </aside>
             </div>
           </div>
-        </div>
+        </div> -->
       <!-- Article page end -->
     </main>
     

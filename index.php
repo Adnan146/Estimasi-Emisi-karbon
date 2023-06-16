@@ -123,7 +123,7 @@
             <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
               bumi dan keberlangsungan kehidupan
             </p>
-            <p data-aos="fade-right"><button class="btn btn-outline-primary pr-5 rounded-5">Get started</button></p>
+            <p data-aos="fade-right"><button class="btn btn-success pr-5 rounded-5">MULAI</button></p>
           </div>
           <div class="col-lg-5 hero-pic pr-5">
               <img src="./assets/img/net zero-pana 1.png" alt="" data-aos="fade-right" >
@@ -137,7 +137,7 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 me-auto">
-              <p class="know-about">KNOW ABOUT ESEMKA</p>
+              <p class="know-about">TENTANG ESEMKA</p>
               <h2 class="know-about-title mb-4">Estimasi Emisi Karbon</h2>
               <p class="know-about-description mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -150,7 +150,7 @@
                 Assumenda incidunt earum voluptate maiores eveniet recusandae
                 rerum veritatis accusamus ipsa ipsum?
               </p>
-              <button type="button" class="btn btn-success rounded-5">
+              <button type="button" class="btn btn- rounded-5">
                 <a href="./about/about.php" class="text-light">Selengkapnya</a>
               </button>
             </div>
@@ -176,7 +176,7 @@
         <div class="container">
           <div class="row align-items-center" data-aos="fade-right">
             <div class="col-md-6 me-auto">
-              <p class="article">ARTICLE</p>
+              <p class="article">ARTIKEL</p>
               <h2 class="article-title">
                 Mengetahui Tentang Dampak Emisi Karbon
               </h2>
