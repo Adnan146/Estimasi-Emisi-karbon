@@ -1,7 +1,7 @@
 <?php
 require 'config.php';
 if(!empty($_SESSION["id"])){
-  header("Location: index.php");
+  header("Location: ../index.php");
 }
 if(isset($_POST["submit"])){
   $usernameemail = $_POST["usernameemail"];
@@ -60,10 +60,11 @@ if(isset($_POST["submit"])){
       <input type="password" name="password" id = "password" required value=""> <br>
     </div>
     <div class="field">
-      <button type="submit" class="btn" name="submit">Login</button>
+      <button type="submit" class="btn" name="submit">Masuk</button>
     </div>
     <div class="links">
-      Don't have account? <a href="registration.php">Sign Up Now</a>
+      Sudah memiliki akun? <a href="registration.php">Daftar Now</a>
+      Kembali ke halaman utama?<a href="../index.ph.php">Beranda</a>
     </div>
     </form>
   </div>

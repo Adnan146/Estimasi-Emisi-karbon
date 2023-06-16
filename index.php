@@ -63,9 +63,9 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="./index.html">BERANDA</a></li>
+            <li><a href="./index.php">BERANDA</a></li>
             <li><a href="#calculator">KALKULATOR</a></li>
-            <li><a href="./about/about.php">ABOUT</a></li>
+            <li><a href="./about/about.php">Tentang</a></li>
             <li><a href="./articles/articlepage.php">ARTIKEL</a></li>
             <li><a href="./aksi/aksi.php">AKSI LINGKUNGAN</a></li>
             <?php
@@ -76,17 +76,19 @@
               <a href="Login/login.php"><button type="button" class="btn btn-success rounded-5">
                 LOGIN
               </button></a>
-          </li>
+              </li>
           <?php
-              }elseif($_SESSION['level'] == "user"){
+              }elseif($_SESSION['id']){
             ?>
+             <li>
              <a href="Login/logout.php"><button type="button" class="btn btn-success rounded-5">
                 LOGOUT
               </button></a>
+              </li>
             <?php
             }
             ?>
-            
+           
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>

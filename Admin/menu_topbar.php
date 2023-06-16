@@ -1,9 +1,5 @@
 <?php
-<<<<<<< HEAD
-require '../config.php';
-=======
 require '../Login/config.php';
->>>>>>> 058565c (penambahan admin dan login)
 if(!empty($_SESSION["id"])){
   $id = $_SESSION["id"];
   $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE id = $id");
