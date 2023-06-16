@@ -221,7 +221,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-success rounded-5">
+              <button type="button" class="btn btn-warning rounded-5">
                 <a href="./articles/articlepage.html" class="text-light">Learn More</a>
               </button>
             </div>

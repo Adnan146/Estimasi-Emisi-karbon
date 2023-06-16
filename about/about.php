@@ -76,7 +76,7 @@
           <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="./index.html">
-            <img src="../assets/img/logo.png" alt="..." class="pt-3 pb-3"/>
+            <img src="../assets/img/logo.png" alt="logo" class="pt-3 pb-3"/>
           </a>
         </div>
 
@@ -118,7 +118,7 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5 about">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -144,10 +144,10 @@
                 <div class="d-inline-flex align-items-center justify-content-center bg-blue rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                     <i class="fa fa-globe fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4">Misi Kami</h5>
+                <h5 class="mt-4">Misi EsEmKa</h5>
                 <hr class="w-25 mx-auto bg-blue mb-1">
                 <hr class="w-50 mx-auto bg-blue mt-0">
-                <p class="mb-0">Misi Esemka adalah menyediakan solusi inovatif yang memberdayakan individu, bisnis, dan komunitas untuk memahami, mengukur, dan mengurangi jejak karbon mereka. Kami percaya bahwa dengan meningkatkan kesadaran dan mengambil tindakan kolektif, kita dapat memberikan dampak positif yang signifikan bagi planet kita.</p>
+                <p class="mb-0">Menyediakan solusi inovatif yang memberdayakan individu, bisnis, dan komunitas untuk memahami, mengukur, dan mengurangi jejak karbon mereka. Kami percaya bahwa dengan meningkatkan kesadaran dan mengambil tindakan kolektif, kita dapat memberikan dampak positif yang signifikan bagi planet kita.</p>
             </div>
         </div>
         <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
@@ -155,10 +155,10 @@
                 <div class="d-inline-flex align-items-center justify-content-center bg-blue rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                     <i class="fa fa-book-open fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4">Kisah Kami</h5>
+                <h5 class="mt-4">Lahirnya EsEmKa</h5>
                 <hr class="w-25 mx-auto bg-blue mb-1">
                 <hr class="w-50 mx-auto bg-blue mt-0">
-                <p class="mb-0">Esemka lahir dari upaya kolektif sekelompok orang yang bersemangat tentang lingkungan. Terinspirasi oleh keinginan untuk mengatasi perubahan iklim, kami memutuskan untuk mewujudkan proyek ini sebagai proyek program MSIB Kampus Merdeka. Program ini memberikan kami kesempatan untuk menggabungkan pengetahuan akademis dengan pengalaman praktis dalam mengembangkan platform yang dapat diandalkan dan mudah digunakan.</p>
+                <p class="mb-0">Esemka lahir dari upaya kolektif sekelompok orang yang bersemangat tentang lingkungan. Terinspirasi oleh keinginan untuk mengatasi perubahan iklim, kami memutuskan untuk mewujudkan proyek ini dalam bentuk sebuah website. Program ini memberikan kami kesempatan untuk menggabungkan pengetahuan akademis dengan pengalaman praktis dalam mengembangkan platform yang dapat diandalkan dan mudah digunakan.</p>
             </div>
         </div>
         <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
@@ -166,10 +166,10 @@
                 <div class="d-inline-flex align-items-center justify-content-center bg-blue rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
                     <i class="fa fa-envelope-open-text fa-3x text-white"></i>
                 </div>
-                <h5 class="mt-4">Nilai-Nilai Kami</h5>
+                <h5 class="mt-4">Nilai-Nilai EsEmKa</h5>
                 <hr class="w-25 mx-auto bg-blue mb-1">
                 <hr class="w-50 mx-auto bg-blue mt-0">
-                <p class="mb-0">Di Esemka, kami didorong oleh serangkaian nilai inti yang menjadi panduan dalam setiap tindakan kami. Integritas, inovasi, dan kolaborasi adalah dasar dari pekerjaan kami. Kami berkomitmen untuk transparansi, memastikan pengguna kami memiliki akses pada informasi yang jujur dan dapat dipercaya.</p>
+                <p class="mb-0">Kami didorong oleh serangkaian nilai inti yang menjadi panduan dalam setiap tindakan kami. Integritas, inovasi, dan kolaborasi adalah dasar dari pekerjaan kami. Kami berkomitmen untuk transparansi, memastikan pengguna kami memiliki akses pada informasi yang jujur dan dapat dipercaya.</p>
             </div>
         </div>
     </div>
@@ -202,28 +202,12 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/dwiki.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/Adnan146"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/zuzlifatul-adnan-a5a345271/"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fourz_adnan/"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="text-center p-4">
-                            <h5 class="mb-0">Febryan Luther Barahama</h5>
-                            <small>UI Design</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
-                            <a class="btn btn-square mx-1" href="https://github.com/Adnan146"><i class="fab fa-github"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/zuzlifatul-adnan-a5a345271/"><i class="fab fa-linkedin"></i></a>
-                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fourz_adnan/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-square mx-1" href="https://github.com/dwikief44"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.linkedin.com/in/dwiki-febriyanto-815909279/"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/kzrnty_/"><i class="fab fa-instagram"></i></a>
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Dwiki Febriyanto</h5>
@@ -231,10 +215,26 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/febryan.jpg" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                            <a class="btn btn-square mx-1" href="https://github.com/kocpiepait"><i class="fab fa-github"></i></a>
+                            <a class="btn btn-square mx-1" href="http://linkedin.com/in/febryan-barahama-ab908527a"><i class="fab fa-linkedin"></i></a>
+                            <a class="btn btn-square mx-1" href="https://www.instagram.com/fbryan.b/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Febryan Luther Barahama</h5>
+                            <small>UI Design</small>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="img/sany.jpeg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
                             <a class="btn btn-square mx-1" href="https://github.com/sanysantiastry"><i class="fab fa-github"></i></a>
