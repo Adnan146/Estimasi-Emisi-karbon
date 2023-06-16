@@ -59,24 +59,24 @@
           <ul>
             <li><a href="../index.php">BERANDA</a></li>
             <li><a href="#">KALKULATOR</a></li>
-            <li><a href="../about/about.php">ABOUT</a></li>
-            <li><a href="/articles/articlepage.php">ARTIKEL</a></li>
+            <li><a href="../about/about.php">TENTANG</a></li>
+            <li><a href="/articles/articlepage.php" class="active">ARTIKEL</a></li>
             <li><a href="../aksi/aksi.php">AKSI LINGKUNGAN</a></li>
             <?php
               session_start();
               if(!$_SESSION){
             ?>
             <li>
-              <a href="Login/login.php"><button type="button" class="btn btn-success rounded-5">
+            <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
                 LOGIN
-              </button></a>
+              </button>
           </li>
           <?php
               }elseif($_SESSION['level'] == "user"){
             ?>
-             <a href="Login/logout.php"><button type="button" class="btn btn-success rounded-5">
+             <button type="button" class="btn btn-success rounded-5 btn-logout" onclick="window.location.href='../Login/logout.php'">
                 LOGOUT
-              </button></a>
+              </button>
             <?php
             }
             ?>

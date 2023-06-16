@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>About EsEmKa</title>
+<meta charset="utf-8">
+    <title>About EsEmKa | Estimasi Emisi Karbon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -27,8 +27,35 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/img/favicon.png" rel="icon" />
+    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
     <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -43,25 +70,50 @@
 
 
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid position-relative p-0">
-        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
-                    <a href="../index.php" class="nav-item nav-link">Home</a>
-                    <a href="about.php" class="nav-item nav-link active">About</a>
-                    <a href="../articles/articlepage.php" class="nav-item nav-link">Artikel</a>
-                    <a href="calculator.html" class="nav-item nav-link">Carbon Calculator</a>
-                    <a href="../aksi/aksi.php" class="nav-item nav-link">Aksi Lingkungan</a>
-                </div>
-            </div>
+    <header id="header" class="fixed-top d-flex align-items-center border">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="./index.html">
+            <img src="../assets/img/logo.png" alt="..." class="pt-3 pb-3"/>
+          </a>
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="../index.php">BERANDA</a></li>
+            <li><a href="#calculator">KALKULATOR</a></li>
+            <li><a href="about.php" class="active">TENTANG</a></li>
+            <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
+            <li><a href="../aksi/aksi.php">AKSI LINGKUNGAN</a></li>
+            <?php
+              session_start();
+              if(!$_SESSION){
+            ?>
+            <li>
+            <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
+                LOGIN
+              </button>
+              </li>
+          <?php
+              }elseif($_SESSION['id']){
+            ?>
+             <li>
+             <button type="button" class="btn btn-success rounded-5 logout" onclick="window.location.href='../Login/logout.php'">
+                LOGOUT
+              </button>
+              </li>
+            <?php
+            }
+            ?>
+           
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
-    </div>
+        <!-- .navbar -->
+      </div>
+    </header>
     <!-- Navbar & Hero End -->
 
 
@@ -206,7 +258,7 @@
         <div class="container-footer">
           <div class="row" data-aos="fade-right">
             <div class="col-md-3 mb-4">
-              <img src="img/logo.png" alt="" class="footer-logo" />
+              <img src="../assets/img/logo.png" alt="" class="footer-logo" />
             </div>
             <div class="col-md-9 mt-4">
               <div class="row site-section pt-0">
@@ -314,7 +366,13 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="../assets/vendor/aos/aos.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
 
+    <!-- Template Main JS File -->
+    <script src="../assets/js/main.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>

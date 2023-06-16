@@ -63,9 +63,9 @@
 
         <nav id="navbar" class="navbar">
           <ul>
-            <li><a href="./index.php">BERANDA</a></li>
+            <li><a href="./index.php" class="active">BERANDA</a></li>
             <li><a href="#calculator">KALKULATOR</a></li>
-            <li><a href="./about/about.php">Tentang</a></li>
+            <li><a href="./about/about.php">TENTANG</a></li>
             <li><a href="./articles/articlepage.php">ARTIKEL</a></li>
             <li><a href="./aksi/aksi.php">AKSI LINGKUNGAN</a></li>
             <?php
@@ -73,17 +73,17 @@
               if(!$_SESSION){
             ?>
             <li>
-              <a href="Login/login.php"><button type="button" class="btn btn-success rounded-5">
+              <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='./Login/login.php'">
                 LOGIN
-              </button></a>
+              </button>
               </li>
           <?php
               }elseif($_SESSION['id']){
             ?>
              <li>
-             <a href="Login/logout.php"><button type="button" class="btn btn-success rounded-5">
+             <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='Login/logout.php'">
                 LOGOUT
-              </button></a>
+              </button>
               </li>
             <?php
             }
@@ -101,13 +101,14 @@
     <section class="hero-section" id="hero">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 text-center text-lg-start">
-            <h1 data-aos="fade-right">Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
-            <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Lorem ipsum dolor sit amet, consectetur
-              adipisicing elit.</p>
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 data-aos="fade-right">Berperan dalam Perubahan:<br>Bersama Kita Kurangi Emisi Karbon dan Wujudkan Masa Depan Hijau</h1>
+            <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
+              bumi dan keberlangsungan kehidupan
+            </p>
             <p data-aos="fade-right"><button class="btn btn-outline-primary pr-5 rounded-5">Get started</button></p>
           </div>
-          <div class="col-lg-7 hero-pic pr-5">
+          <div class="col-lg-5 hero-pic pr-5">
               <img src="./assets/img/net zero-pana 1.png" alt="" data-aos="fade-right" >
           </div>
         </div>
