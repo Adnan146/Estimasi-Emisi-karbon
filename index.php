@@ -150,7 +150,9 @@
                 Assumenda incidunt earum voluptate maiores eveniet recusandae
                 rerum veritatis accusamus ipsa ipsum?
               </p>
-              <button type="button" class="btn btn-success rounded-5">Learn More</button>
+              <button type="button" class="btn btn-success rounded-5">
+                <a href="./about/about.php" class="text-light">Selengkapnya</a>
+              </button>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-5 mt-5" data-aos="fade-left">
@@ -239,7 +241,7 @@
                 </div>
               </div>
               <button type="button" class="btn btn-success rounded-5">
-                <a href="./articles/articlepage.html" class="text-light">Learn More</a>
+                <a href="./articles/articlepage.php" class="text-light">Selengkapnya</a>
               </button>
             </div>
             <div class="col-md-6 mb-5 mt-5" data-aos="fade-left">
