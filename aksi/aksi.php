@@ -1,3 +1,7 @@
+<?php
+session_start();
+include "config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -70,7 +74,6 @@
             <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
             <li><a href="./aksi.php" class="active">AKSI LINGKUNGAN</a></li>
             <?php
-              session_start();
               if(!$_SESSION){
             ?>
             <li>
@@ -109,41 +112,30 @@
              <button class="btn-jumbo" type="submit">SUBMIT</button>
             </div>
         </div>
-
+       
         <div class="main-content">
             <div class="titlle-main-content">
                 <h3>Kampanye Aksi Lingkungan</h3>
             </div>
+            <?php
+          $data = mysqli_query($conn, "select * from tb_aksi");
+         while ($d = mysqli_fetch_array($data)) {                            
+          ?>
             <section class="kampanye">
                 <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
+                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">    
+                      <h5 class="card-title"><?php echo $d['title']?></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
+                      <p class="card-text"><?php echo $d['deskripsi']?></p>
+                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
-                  <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
-                  <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>  
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
+                 
             </section>
-
+          <?php
+         }
+          ?>
             <div class="titlle-main-content">
                 <h3>Artikel Terbaru</h3>
             </div>

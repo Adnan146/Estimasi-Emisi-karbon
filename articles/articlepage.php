@@ -131,34 +131,29 @@ include "config.php";
             Selamat Datang di Halaman Artikel EsEmKa
           </h1>
         </div>
-        <?php
-          
-          $data = mysqli_query($conn, "select * from tb_artikel");
-         while ($d = mysqli_fetch_array($data)) {
-                                        
-          ?>
+        
         <div class="main-content">
-      <section class="artikel">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
-            <img src=<?php echo $d['image']?> class="card-img-top" style="height:250px ;" alt="..."> 
-                    <div class="card-body">   
-                      <h5 class="card-title"><?=$d['title']?></h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><?=$d['date']?></h6>  
-                      <p class="card-text"><?=$d['deskripsi']?></p>
-                      <a href="<?=$d['link']?>" class="btn btn-warning">Selengkapnya</a>
+        <?php         
+          $data = mysqli_query($conn, "select * from tb_artikel");
+         while ($d = mysqli_fetch_array($data)) {                              
+          ?>
+      <section class="kampanye">
+                <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
+                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">    
+                      <h5 class="card-title"><?php echo $d['title']?></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
+                      <p class="card-text"><?php echo $d['deskripsi']?></p>
+                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      </div>
-      <?php
+                 
+            </section>
+            <?php
         }
     ?>
+      </div>
+      
        
       <!-- Article page end -->
     </main>
