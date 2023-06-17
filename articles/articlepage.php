@@ -137,7 +137,7 @@
                     <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
                     <div class="card-body">
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn">Selengkapnya</a>
                     </div>
