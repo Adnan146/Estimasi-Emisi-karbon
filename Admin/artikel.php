@@ -1,9 +1,3 @@
-<?php
-include("config_fb.php");
-include("firebaseRDB.php");
-
-$db = new firebaseRDB($databaseURL);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include "header.php"; ?>
@@ -31,6 +25,7 @@ $db = new firebaseRDB($databaseURL);
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>No</th> 
                                             <th>Link Picture</th>
                                             <th>Judul Artikel </th>
                                             <th>Deskripsi Artikel </th>
@@ -41,26 +36,28 @@ $db = new firebaseRDB($databaseURL);
                                     </thead>
                                     <tbody>
                                     <?php
-                                        $data = $db->retrieve("konten");
-                                        $data = json_decode($data, 1);
-                                        if(is_array($data)){
-                                            foreach($data as $id => $konten){
-                            
-                                                echo "<tr>
-                                                <td><img src='{$konten['image']}' width='50px'></td>
-                                                <td>{$konten['title']}</td>
-                                                <td>{$konten['deskripsi']}</td>
-                                                <td>{$konten['date']}</td>
-                                                <td>{$konten['link']}</td>
+                                        include "config.php";
+                                        $no = 0;
+                                        $data = mysqli_query($conn, "select * from tb_artikel");
+                                        while ($d = mysqli_fetch_array($data)) {
+                                            $no++;
+                                        ?>
+                                                <tr>
+                                                <td><?php echo $no ?></td>
+                                                <td><img src='<?php echo $d['image']; ?> ' width='50px'></td>
+                                                <td><?php echo $d['title']; ?></td>
+                                                <td><?php echo $d['deskripsi']; ?></td>
+                                                <td><?php echo $d['date']; ?></td>
+                                                <td><?php echo $d['link']; ?></td>
                                                 <td>
                                                 <a href='artikel-edit.php?id=$id' class='btn-sm btn-primary'><span class='fas fa-edit'></a>
                                                 <a href='artikel-hapus.php?id=$id' class='btn-sm btn-danger'><span class='fas fa-trash'></a>
                                                 </td>
                                                
                                             </tr>";
-                                            }
-                                        }
-                                        ?>
+                                            <?php
+                                                }
+                                            ?>
                             </div>
                         
                         </tbody>

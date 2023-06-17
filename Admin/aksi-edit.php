@@ -26,14 +26,10 @@
                         </div>
                         <div class="card-body">
                         <?php
-                            include("config_fb.php");
-                            include("firebaseRDB.php");
-
-                            $db = new firebaseRDB($databaseURL);
+                            include 'config.php';
                             $id = $_GET['id'];
-                            $retrieve = $db->retrieve("aksi/$id");
-                            $data = json_decode($retrieve, 1);
-
+                            $query = mysqli_query($conn, "select * from tb_aksi where id='$id'");
+                            $data  = mysqli_fetch_array($query);
                             ?>
 
                             <!-- </div> -->

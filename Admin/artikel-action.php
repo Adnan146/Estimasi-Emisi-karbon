@@ -1,14 +1,16 @@
 <?php
-include("config_fb.php");
-include("firebaseRDB.php");
-$db = new firebaseRDB($databaseURL);
+// koneksi database
+include 'config.php';
 
-$insert = $db->insert("konten", [
-   "title"     => $_POST['title'],
-   "image" => $_POST['image'],
-   "deskripsi"      => $_POST['deskripsi'],
-   "date"    => $_POST['date'],
-   "link"    => $_POST['link']
-]);
-header("Location:artikel.php");
+// menangkap data yang di kirim dari form
+$image = $_POST['image'];
+$title = $_POST['title'];
+$deskripsi = $_POST['deskripsi'];
+$date = $_POST['date'];
+$link = $_POST['link'];
 
+// menginput data ke database
+mysqli_query($conn, "insert into tb_artikel values('','$image','$title','$deskripsi','$date','$link')");
+
+// mengalihkan halaman kembali ke index.php
+header("location:artikel.php");

@@ -26,20 +26,22 @@
                         </div>
                         <div class="card-body">
                         <?php
-                            include("config_fb.php");
-                            include("firebaseRDB.php");
-
-                            $db = new firebaseRDB($databaseURL);
+                            include 'config.php';
                             $id = $_GET['id'];
-                            $retrieve = $db->retrieve("konten/$id");
-                            $data = json_decode($retrieve, 1);
-
+                            $query = mysqli_query($conn, "select * from tb_artikel where id='$id'");
+                            $data  = mysqli_fetch_array($query);
                             ?>
 
                             <!-- </div> -->
                             <div class="panel-body">
                                 <form class="form-horizontal style-form" style="margin-top: 20px;" action="artikel-edit-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-
+                                <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">ID User</label>
+                                        <div class="col-sm-8">
+                                            <input name="id" type="text" id="id" class="form-control" value="<?php echo $data['id']; ?>" readonly />
+                                            <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">Judul Artikel</label>
                                         <div class="col-sm-8">

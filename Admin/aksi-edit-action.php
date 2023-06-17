@@ -1,15 +1,17 @@
 <?php
-include("config_fb.php");
-include("firebaseRDB.php");
+// koneksi database
+include 'config.php';
 
-$db = new firebaseRDB($databaseURL);
-$id = $_POST['id'];
-$update = $db->update("aksi", $id, [
-   "title"     => $_POST['title'],
-   "image" => $_POST['image'],
-   "deskripsi"      => $_POST['deskripsi'],
-   "date"    => $_POST['date'],
-   "link"    => $_POST['link']
-]);
-header("Location:aksi.php");
-?>
+// menangkap data yang di kirim dari form
+$image = $_POST['image'];
+$title = $_POST['title'];
+$deskripsi = $_POST['deskripsi'];
+$date = $_POST['date'];
+$link = $_POST['link'];
+
+// menginput data ke database
+mysqli_query($conn, "UPDATE tb_aksi SET image='$image', title='$title', deskripsi='$deskripsi', date='$date', link='$link' where id='$id'");
+
+
+// mengalihkan halaman kembali ke index.php
+header("location:aksi.php");

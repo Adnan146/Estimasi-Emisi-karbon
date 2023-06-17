@@ -1,10 +1,15 @@
 <?php
-include("config_fb.php");
-include("firebaseRDB.php");
+// koneksi database
+include 'config.php';
 
-$db = new firebaseRDB($databaseURL);
+// menangkap data id yang di kirim dari url
 $id = $_GET['id'];
-if($id != ""){
-   $delete = $db->delete("aksi", $id);
-   header("Location:aksi.php");
+
+
+// menghapus data dari database
+$query = mysqli_query($conn, "delete from tb_aksi where id='$id'");
+if ($query) {
+    echo "<script>alert('Data Berhasil Dihapus!'); window.location = 'artikel.php'</script>";
+} else {
+    echo "<script>alert('Data Gagal Dihapus!'); window.location = 'artikel.php'</script>";
 }
