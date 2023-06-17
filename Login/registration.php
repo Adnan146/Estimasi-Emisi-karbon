@@ -35,7 +35,9 @@ if(isset($_POST["submit"])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Register</title>
+    <link href="../assets/img/favicon.ico" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <title>Daftar</title>
   </head>
   <body>
   <div class="container">
@@ -43,28 +45,28 @@ if(isset($_POST["submit"])){
     <h2>Sign Up</h2>
     <form action="" method="post">
     <div class="field input">
-      <label for="name">Name : </label>
+      <label for="name">Name </label>
       <input type="text" name="name" id = "name" required value=""> <br>
     </div>
     <div class="field input">  
-      <label for="username">Username : </label>
+      <label for="username">Username  </label>
       <input type="text" name="username" id = "username" required value=""> <br>
     </div>
     <div class="field input">  
-      <label for="email">Email : </label>
+      <label for="email">Email  </label>
       <input type="email" name="email" id = "email" required value=""> <br>
     </div>
     <div class="field input">  
-      <label for="password">Password : </label>
+      <label for="password">Password </label>
       <input type="password" name="password" id = "password" required value=""> <br>
     </div>
     <div class="field input">  
-      <label for="confirmpassword">Confirm Password : </label>
+      <label for="confirmpassword">Confirm Password  </label>
       <input type="password" name="confirmpassword" id = "confirmpassword" required value=""> <br>
     </div>
     
     <div class="field">   
-        <input type="submit" class="btn" name="submit" value="Register" required>
+        <input type="submit" class="btn" name="submit" value="Daftar" required>
       </div>
       <div class="links">
         Already a member? <a href="login.php">Sign In</a>
