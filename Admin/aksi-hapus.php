@@ -9,7 +9,7 @@ $id = $_GET['id'];
 // menghapus data dari database
 $query = mysqli_query($conn, "delete from tb_aksi where id='$id'");
 if ($query) {
-    echo "<script>alert('Data Berhasil Dihapus!'); window.location = 'artikel.php'</script>";
+    echo "<script>alert('Data Berhasil Dihapus!'); window.location = 'aksi.php'</script>";
 } else {
-    echo "<script>alert('Data Gagal Dihapus!'); window.location = 'artikel.php'</script>";
+    echo "<script>alert('Data Gagal Dihapus!'); window.location = 'aksi.php'</script>";
 }

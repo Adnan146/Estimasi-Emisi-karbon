@@ -74,14 +74,14 @@
               if(!$_SESSION){
             ?>
             <li>
-              <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
+            <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
                 MASUK
               </button>
           </li>
           <?php
               }elseif($_SESSION['level'] == "user"){
             ?>
-             <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/logout.php'">
+             <button type="button" class="btn btn-success rounded-5 btn-logout" onclick="window.location.href='../Login/logout.php'">
                 KELUAR
               </button>
             <?php

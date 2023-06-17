@@ -25,39 +25,39 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>No</th> 
-                                            <th>Link Picture</th>
-                                            <th>Judul Artikel </th>
-                                            <th>Deskripsi Artikel </th>
-                                            <th>Tanggal Artikel</th>
-                                            <th>Link</th>
+                                            <th>NO</th>
+                                            <th>Judul Artikel</th>
+                                            <th>Deskripsi Artikel</th>
+                                            <th>Image</th>
+                                            <th>Date</th>
+                                            <th>Link Artikel</th>
                                             <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                    <?php
+                                        <?php
                                         include "config.php";
                                         $no = 0;
-                                        $data = mysqli_query($conn, "select * from tb_artikel");
+                                        $data = mysqli_query($conn, "SELECT * from tb_artikel");
                                         while ($d = mysqli_fetch_array($data)) {
                                             $no++;
                                         ?>
-                                                <tr>
+                                            <tr>
                                                 <td><?php echo $no ?></td>
-                                                <td><img src='<?php echo $d['image']; ?> ' width='50px'></td>
-                                                <td><?php echo $d['title']; ?></td>
+                                                <td><?php echo $d['title']; ?> </a> </b></td>
                                                 <td><?php echo $d['deskripsi']; ?></td>
+                                                <td><img src='<?php echo $d['image']; ?> ' width='50px'></td>
                                                 <td><?php echo $d['date']; ?></td>
                                                 <td><?php echo $d['link']; ?></td>
                                                 <td>
-                                                <a href='artikel-edit.php?id=$id' class='btn-sm btn-primary'><span class='fas fa-edit'></a>
-                                                <a href='artikel-hapus.php?id=$id' class='btn-sm btn-danger'><span class='fas fa-trash'></a>
+                                                    <a href="artikel-edit.php?id=<?php echo $d['id']; ?> " class="btn-sm btn-primary"><span class="fas fa-edit"></a>
+                                                    <a href="artikel-hapus.php?id=<?php echo $d['id']; ?>" class="btn-sm btn-danger"><span class="fas fa-trash"></a>
                                                 </td>
-                                               
-                                            </tr>";
-                                            <?php
-                                                }
-                                            ?>
+                                            </tr>
+                            </div>
+                        <?php
+                                        }
+                        ?>
                             </div>
                         
                         </tbody>
