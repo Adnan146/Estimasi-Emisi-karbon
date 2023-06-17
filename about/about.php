@@ -57,6 +57,8 @@
     <!-- Template Stylesheet -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="article.css">
 </head>
 
 <body>
@@ -151,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h6 class="section-title bg-white text-start text-primary pe-3">TENTANG</h6>
                     <h1 class="mb-4">Selamat Datang di <span class="text-warning">EsEmKa </span><span class="text-warning">(Estimasi Emisi Karbon)!</span></h1>
                     <p class="mb-4">Di Esemka, kami memiliki kepedulian yang tinggi terhadap masalah serius emisi karbon dan dampaknya terhadap lingkungan. Perjalanan kami dimulai sebagai proyek capstone dalam program MSIB Kampus Merdeka, yang memberikan kami kesempatan untuk mengaplikasikan pengetahuan dan keterampilan kami dalam menciptakan solusi inovatif.</p>
                     <p class="mb-4">Tujuan utama EsEmKa adalah untuk meningkatkan kesadaran masyarakat akan dampak emisi karbon. Sadar akan dampak emisi karbon mengajak kita untuk mengubah perilaku dan mengambil tindakan berkelanjutan, seperti mengurangi konsumsi energi fosil, beralih ke sumber energi terbarukan, mendukung transportasi ramah lingkungan, dan menerapkan praktik keberlanjutan dalam kehidupan sehari-hari.</p>
@@ -203,7 +205,7 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Our Team</h6>
+                <h6 class="section-title bg-white text-center text-primary px-3">TIM KITA</h6>
                 <h1 class="mb-5">Tim Developer Kami</h1>
             </div>
             <div class="row g-4">
@@ -330,49 +332,7 @@
         </div>
       </footer>
 
-    <!-- <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-blue w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">EsEmKa</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    
     <!-- Footer End -->
 
 

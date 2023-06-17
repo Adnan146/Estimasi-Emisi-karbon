@@ -139,46 +139,30 @@ include "config.php";
             <div class="titlle-main-content">
                 <h3>Artikel Terbaru</h3>
             </div>
+            <?php
+          $data = mysqli_query($conn, "select * from tb_aksi");
+         while ($d = mysqli_fetch_array($data)) {                            
+          ?>
             <section class="article-short">
                <div class="article-short-wrap">
                    <div class="article-image">
-                       <img src="../assets/img/person_2.jpg" alt="..." />
+                       <img src="<?php echo $d['image']?>" alt="..." />
                    </div>
                    <div class="article-news">
-                       <h4 class><a href="...">TITTLE</a></h4>
-                       <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                        Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                       <h4 class><?php echo $d['title']?></h4>
+                       <p><?php echo $d['deskripsi']?></p>
+                        <p class="card-text"><small class="text-muted"><?php echo $d['date']?></small></p>
                    </div>
                </div>
-               <div class="article-short-wrap">
-                <div class="article-image">
-                    <img src="../assets/img/person_2.jpg" alt="..." />
-                </div>
-                <div class="article-news">
-                    <h4><a href="...">TITTLE</a></h4>
-                    <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                     Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="article-short-wrap">
-                <div class="article-image">
-                    <img src="../assets/img/person_2.jpg" alt="..." />
-                </div>
-                <div class="article-news">
-                    <h4><a href="...">TITTLE</a></h4>
-                    <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                     Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
 
             <div class="load-more">
-                <button type="button" class="btn-article"><a href="../articles/articlepage.html">LOAD MORE</a></button>
+                <button type="button" class="btn-article"><a href="<?php echo $d['link']?>">LOAD MORE</a></button>
             </div>
             
             </section>
+            <?php
+         }
+            ?>
         </div>
     </main>
     <!-- End #main -->
