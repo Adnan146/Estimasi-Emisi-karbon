@@ -71,7 +71,11 @@
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">Level</label>
                                         <div class="col-sm-8">
-                                            <input name="level" class="form-control" id="level" type="text" value="<?php echo $data['level']; ?>" required />
+                                        <select id="level" name="level" class="form-control">
+                                        <option value="<?php echo $data['level']; ?>"><?php echo $data['level']; ?></option>
+                                        <option value="admin">admin</option>
+                                        <option value="user">user</option>
+                                    </select>
                                         </div>
                                     </div>
                                     <div class="form-group" style="margin-bottom: 20px;">

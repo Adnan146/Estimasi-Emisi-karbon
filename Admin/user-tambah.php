@@ -55,7 +55,10 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Level</label>
                                     <div class="col-sm-6">
-                                    <input type="text" name="level" class="form-control" placeholder="admin/user" required />
+                                    <select id="level" name="level" class="form-control">
+                                        <option value="admin">admin</option>
+                                        <option value="user">user</option>
+                                    </select>
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-bottom: 20px;">
