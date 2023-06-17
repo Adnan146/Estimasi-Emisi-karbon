@@ -76,7 +76,7 @@
           <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="./index.html">
-            <img src="../assets/img/logo.png" alt="logo" class="pt-3 pb-3"/>
+            <img src="../assets/img/logo-name.png" alt="logo" class="pt-3 pb-3"/>
           </a>
         </div>
 
@@ -147,12 +147,12 @@
             <div class="row g-5">
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-90 h-90" src="img/logo.png" alt="logo" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-90 h-90" src="../assets/img/logo-esemka.png" alt="logo" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Selamat Datang di <span class="text-primary">EsEmKa (Estimasi Emisi Karbon)!</span></h1>
+                    <h1 class="mb-4">Selamat Datang di <span class="text-warning">EsEmKa </span><span class="text-warning">(Estimasi Emisi Karbon)!</span></h1>
                     <p class="mb-4">Di Esemka, kami memiliki kepedulian yang tinggi terhadap masalah serius emisi karbon dan dampaknya terhadap lingkungan. Perjalanan kami dimulai sebagai proyek capstone dalam program MSIB Kampus Merdeka, yang memberikan kami kesempatan untuk mengaplikasikan pengetahuan dan keterampilan kami dalam menciptakan solusi inovatif.</p>
                     <p class="mb-4">Tujuan utama EsEmKa adalah untuk meningkatkan kesadaran masyarakat akan dampak emisi karbon. Sadar akan dampak emisi karbon mengajak kita untuk mengubah perilaku dan mengambil tindakan berkelanjutan, seperti mengurangi konsumsi energi fosil, beralih ke sumber energi terbarukan, mendukung transportasi ramah lingkungan, dan menerapkan praktik keberlanjutan dalam kehidupan sehari-hari.</p>
                     <p class="mb-4">Dengan kesadaran dan tindakan kolektif, kita dapat menjaga planet ini sebagai tempat yang layak dihuni bagi generasi mendatang, serta melestarikan keanekaragaman hayati dan sumber daya alam yang sangat berharga bagi kita semua.</p>
@@ -282,7 +282,7 @@
         <div class="container-footer">
           <div class="row" data-aos="fade-right">
             <div class="col-md-3 mb-4">
-              <img src="../assets/img/logo.png" alt="" class="footer-logo" />
+              <img src="../assets/img/logo-esemka.png" alt="" class="footer-logo" style="width: 90px;"/>
             </div>
             <div class="col-md-9 mt-4">
               <div class="row site-section pt-0">

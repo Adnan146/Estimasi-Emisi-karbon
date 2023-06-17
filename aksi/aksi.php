@@ -58,7 +58,7 @@
           <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="./index.html">
-            <img src="../assets/img/logo.png" alt="..." class="pt-3 pb-3"/>
+            <img src="../assets/img/logo-name.png" alt="..." class="pt-3 pb-3"/>
           </a>
         </div>
 
@@ -121,7 +121,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">IKUT BERAKSI</a>
+                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
                   <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
@@ -130,7 +130,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">IKUT BERAKSI</a>
+                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
                   <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
@@ -139,7 +139,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>  
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">IKUT BERAKSI</a>
+                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
             </section>
@@ -196,7 +196,7 @@
       <div class="container">
         <div class="row" data-aos="fade-right">
           <div class="col-md-3 mb-4">
-            <img src="../assets/img/logo.png" alt="" class="footer-logo" />
+            <img src="../assets/img/logo-esemka.png" alt="logo" class="footer-logo" style="width: 90px;" />
           </div>
           <div class="col-md-9 mt-4">
             <div class="row site-section pt-0">

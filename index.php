@@ -50,7 +50,7 @@
           <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="./index.html">
-            <img src="./assets/img/logo.png" alt="..." class="pt-3 pb-3"/>
+            <img src="./assets/img/logo-name.png" alt="..." class="pt-3 pb-3"/>
           </a>
         </div>
 
@@ -123,7 +123,7 @@
             <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
               bumi dan keberlangsungan kehidupan
             </p>
-            <p data-aos="fade-right"><button class="btn btn-success pr-5 rounded-5">MULAI</button></p>
+            <p data-aos="fade-right"><button class="btn btn-warning pr-5 rounded-5">MULAI</button></p>
           </div>
           <div class="col-lg-5 hero-pic pr-5">
               <img src="./assets/img/net zero-pana 1.png" alt="" data-aos="fade-right" >
@@ -150,7 +150,7 @@
                 Assumenda incidunt earum voluptate maiores eveniet recusandae
                 rerum veritatis accusamus ipsa ipsum?
               </p>
-              <button type="button" class="btn btn- rounded-5">
+              <button type="button" class="btn btn-warning rounded-5">
                 <a href="./about/about.php" class="text-light">Selengkapnya</a>
               </button>
             </div>
@@ -329,7 +329,7 @@
       <div class="container">
         <div class="row" data-aos="fade-right">
           <div class="col-md-3 mb-4">
-            <img src="./assets/img/logo.png" alt="" class="footer-logo" />
+            <img src="./assets/img/logo-esemka.png" alt="" class="footer-logo" style="width: 90px;"/>
           </div>
           <div class="col-md-9 mt-4">
             <div class="row site-section pt-0">

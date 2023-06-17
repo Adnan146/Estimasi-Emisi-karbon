@@ -50,6 +50,17 @@
     background-color: #90CAF9;
 }
 
+.btn.btn-warning {
+    background: #fdd168;
+    background: linear-gradient(-45deg, #ecb535, #fdd168);
+    color: #fff;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn.btn-warning:hover{
+    background: linear-gradient(90deg,  #be973c, #9e7618);
+  }
+  
 .main-content{
     width: 100%;
     display: flex;

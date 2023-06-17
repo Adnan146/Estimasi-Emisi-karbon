@@ -52,7 +52,7 @@
           <!-- <h1><img src="/assets/img/logo.png" alt=""><a href="#">EsEmKa</a></h1> -->
           <!-- Uncomment below if you prefer to use an image logo -->
           <a href="./index.html">
-            <img src="../assets/img/logo.png" alt="..." class="pt-3 pb-3"/>
+            <img src="../assets/img/logo-name.png" alt="..." class="pt-3 pb-3"/>
           </a>
         </div>
 
@@ -124,7 +124,7 @@
             class="text-light text-start fs-3 position-absolute bottom-0 m-5"
             style="justify-content:center;"
           >
-            - Selamat Datang di Halaman Artikel EsEmKa -
+            Selamat Datang di Halaman Artikel EsEmKa
           </h1>
         </div>
         
@@ -139,7 +139,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
                       <h5 class="card-title">Title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">Selengkapnya</a>
+                      <a href="#" class="btn btn-warning">Selengkapnya</a>
                     </div>
                   </div>
             </div>
@@ -150,7 +150,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">Selengkapnya</a>
+                      <a href="#" class="btn btn-warning">Selengkapnya</a>
                     </div>
                   </div>
             </div>
@@ -161,7 +161,7 @@
                       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn">Selengkapnya</a>
+                      <a href="#" class="btn btn-warning">Selengkapnya</a>
                     </div>
                   </div>
             </div>
@@ -253,7 +253,7 @@
       <div class="container">
         <div class="row" data-aos="fade-right">
           <div class="col-md-3 mb-4">
-            <img src="../assets/img/logo.png" alt="" class="footer-logo" />
+            <img src="../assets/img/logo-esemka.png" alt="" class="footer-logo" style="width: 90px;"/>
           </div>
           <div class="col-md-9 mt-4">
             <div class="row site-section pt-0">

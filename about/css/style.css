@@ -28,9 +28,11 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.text-primary,
-.span {
-    color: #94ccfc !important;
+.text-primary {
+    color: #90CAF9;
+}
+.text-warning {
+    color: #fdd168 !important;
 }
 
 
