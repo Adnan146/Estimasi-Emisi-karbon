@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+<?php
+session_start();
+include "config.php";
+?>
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -61,7 +66,6 @@
           <li><a href="../index.php" >BERANDA</a></li>
             <li>
               <?php
-               session_start();
               if(!$_SESSION){
             ?>
             <a href="../Login/login.php">KALKULATOR</a>
@@ -128,7 +132,6 @@
           </h1>
         </div>
         <?php
-          include "config.php";
           
           $data = mysqli_query($conn, "select * from tb_artikel");
          while ($d = mysqli_fetch_array($data)) {
