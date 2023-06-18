@@ -5,9 +5,9 @@
 <meta charset="utf-8">
     <title>About EsEmKa | Estimasi Emisi Karbon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
+    <meta name="description" content="estimasi emisi karbon">
+    <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
+    <meta name="author" content="EsEmKa">
     <!-- Favicon -->
     <link href="img/logo.png" rel="icon">
 

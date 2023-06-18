@@ -40,6 +40,9 @@ if(isset($_POST["submit"])){
 <html lang="en" dir="ltr">
   <head>
   <meta charset="UTF-8">
+    <meta name="description" content="estimasi emisi karbon">
+    <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
+    <meta name="author" content="EsEmKa">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
