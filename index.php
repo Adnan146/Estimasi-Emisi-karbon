@@ -19,7 +19,7 @@
     />
 
     <!-- Vendor CSS Files -->
-    <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="./assets/css/style.css" rel="stylesheet" />
     <link
       href="./assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -66,7 +66,7 @@
             <?php
               }elseif($_SESSION['id']){
             ?>
-            <a href="#calculator">KALKULATOR</a>
+            <a href="./kalkulator/kalku.html">KALKULATOR</a>
             <?php        
               }
             ?>
@@ -117,15 +117,15 @@
     <!-- ======= Hero Section ======= -->
     <section class="hero-section" id="hero">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7 text-center text-lg-start">
-            <h1 data-aos="fade-right">Berperan dalam Perubahan:<br>Bersama Kita Kurangi Emisi Karbon dan Wujudkan Masa Depan Hijau</h1>
-            <p class="mb-5" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
+        <div class="hero-wrap row">
+          <div class="hero-title col-lg-7 text-center text-lg-start">
+            <h1 class="hero-h1" data-aos="fade-right">Berperan dalam Perubahan:<br>Bersama Kita Kurangi Emisi Karbon dan Wujudkan Masa Depan Biru</h1>
+            <p class="mb-4" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
               bumi dan keberlangsungan kehidupan
             </p>
             <p data-aos="fade-right"><button class="btn btn-warning pr-5 rounded-5">MULAI</button></p>
           </div>
-          <div class="col-lg-5 hero-pic pr-5">
+          <div class="col-lg-5 hero-pic">
               <img src="./assets/img/net zero-pana 1.png" alt="" data-aos="fade-right" >
           </div>
         </div>
@@ -145,17 +145,17 @@
                 molestiae porro omnis. Dolores aspernatur delectus impedit
                 incidunt dolore mollitia esse natus beatae.
               </p>
-              <p>
+              <p class="know-about-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Assumenda incidunt earum voluptate maiores eveniet recusandae
                 rerum veritatis accusamus ipsa ipsum?
               </p>
-              <button type="button" class="btn btn-warning rounded-5">
+              <button type="button" class="btn btn-warning rounded-5 mt-3">
                 <a href="./about/about.php" class="text-light">Selengkapnya</a>
               </button>
             </div>
             <div class="col-md-1"></div>
-            <div class="col-md-5 mt-5" data-aos="fade-left">
+            <div class="youtube col-md-5 mt-5" data-aos="fade-left">
               <iframe
                 style="border-radius: 3%"
                 width="400"

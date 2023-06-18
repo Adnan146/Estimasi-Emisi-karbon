@@ -6,15 +6,20 @@
 
 
 .jumbotron{
-    background-image: url('../assets/img/close-up-people-volunteer-teamwork-putting-finger-star-shapehands-togetherstack-handsunity-teamwork-world-environment-day\ 1.jpg');
+    background-image: url('../assets/img/bakcground.png');
     height: 445px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
+}
+
+.jumbo-content{
+    position: relative;
+    top: 9%;
 }
 
 .jumbo-heading{
@@ -23,8 +28,9 @@
 }
 
 .Jumbo-heading-1{
-    color: #90CAF9;
-    width: 210px;
+    color: #fff;
+    width: 55%;
+    font-weight: 800;
 }
 
 .Jumbo-heading-2{
@@ -33,8 +39,12 @@
 
 .jumbo-desk{
     padding: 0 7%;
-    width: 495px;
-    color: #303E3F;
+    width: 55%;
+}
+
+.jumbo-desk p {
+    color: rgba(255, 255, 255, 0.363);
+    font-weight: 500;
 }
 
 .btn-jumbo-container{
@@ -42,23 +52,26 @@
 }
 
 .btn-jumbo{
-    width: 129px;
+    width: 160px;
     height: 44px;
     border-radius: 50px;
     border: none;
-    color: #fff;
-    background-color: #90CAF9;
+    color: black;
+    background-color: #FFC322;
+    font-weight: 700;
 }
 
 .btn.btn-warning {
-    background: #fdd168;
-    background: linear-gradient(-45deg, #ecb535, #fdd168);
+    background: #FFC322;
+    background: linear-gradient(-45deg, #ecb535, #FFC322);
     color: #fff;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15); */
   }
   
   .btn.btn-warning:hover{
-    background: linear-gradient(90deg,  #be973c, #9e7618);
+    background: linear-gradient(90deg,  #90CAF9, #69B9F9);
+    transform: scale(1.1);
+    transition: 0.5s;
   }
 
 .main-content{
@@ -136,10 +149,13 @@
 
 .load-more{
     padding: 0 7%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .btn-article{
-    background-color: #90CAF9;
+    background-color: #FFC322;
+    font-weight: 700;
     border: none;
     width: 129px;
     height: 44px;
@@ -147,6 +163,6 @@
 }
 
 .btn-article a{
-    color: #fff;
+    color: black;
 }
 

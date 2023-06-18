@@ -97,17 +97,18 @@
 
     <main id="main">
         <div class="jumbotron">
-            <div class="jumbo-heading">
-             <h1 class="Jumbo-heading-1">Heading 1</h1>
-             <h2 class="Jumbo-heading-2">Heading 2</h2>
+          <div class="jumbo-content">
+          <div class="jumbo-heading">
+             <h1 class="Jumbo-heading-1">Suara Warga Untuk Strategi Pengendalian Pengurangan Karbon</h1>
             </div>
             <div class="jumbo-desk">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae vel dignissimos quos expedita sint assumenda ipsum. Non, et. </p>
+                <p>Yuk, sumbangkan kegiatanmu untuk ikut dukung langkah-langkah pengendalian penggunaan karbon di daerahmu!</p>
             </div>
      
             <div class="btn-jumbo-container">
-             <button class="btn-jumbo" type="submit">SUBMIT</button>
+             <button class="btn-jumbo" type="submit">SAKSIKAN DISINI</button>
             </div>
+          </div>
         </div>
 
         <div class="main-content">
