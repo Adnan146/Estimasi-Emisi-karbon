@@ -69,7 +69,7 @@ include "config.php";
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="../index.php">BERANDA</a></li>
-            <li><a href="#calculator">KALKULATOR</a></li>
+            <li><a href="../kalkulator/kalku.php">KALKULATOR</a></li>
             <li><a href="../about/about.php">TENTANG</a></li>
             <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
             <li><a href="./aksi.php" class="active">AKSI LINGKUNGAN</a></li>

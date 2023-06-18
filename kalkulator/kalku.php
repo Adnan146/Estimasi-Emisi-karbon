@@ -1,15 +1,14 @@
-
 <?php
 session_start();
 include "config.php";
 ?>
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Esemka | Estimasi Emisi Karbons</title>
+    <title>Esemka | Estimasi Emisi Karbon</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -33,12 +32,18 @@ include "config.php";
       href="../assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="../assets/vendor/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="../assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Template Main CSS File -->
     <link href="../assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="article.css">
+    <link href="../aksi/aksi.css" rel="stylesheet"/>
 
     <!-- =======================================================
   * Template Name: SoftLand
@@ -63,35 +68,11 @@ include "config.php";
 
         <nav id="navbar" class="navbar">
           <ul>
-          <li><a href="../index.php" >BERANDA</a></li>
-            <li>
-              <?php
-              if(!$_SESSION){
-            ?>
-            <a href="../Login/login.php">KALKULATOR</a>
-            <?php
-              }elseif($_SESSION['id']){
-            ?>
-            <a href="../kalkulator/kalku.php">KALKULATOR</a>
-            <?php        
-              }
-            ?>
-            </li>
+            <li><a href="../index.php">BERANDA</a></li>
+            <li><a href="./kalku.php" class="active">KALKULATOR</a></li>
             <li><a href="../about/about.php">TENTANG</a></li>
-            <li><a href="./articlepage.php" class="active">ARTIKEL</a></li>
-            <li>
-              <?php
-              if(!$_SESSION){
-            ?>
-            <a href="../Login/login.php">AKSI LINGKUNGAN</a>
-            <?php
-              }elseif($_SESSION['id']){
-            ?>
-            <a href="../aksi/aksi.php">AKSI LINGKUNGAN</a>
-            <?php        
-              }
-            ?>
-            </li>
+            <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
+            <li><a href="../aksi/aksi.php">AKSI LINGKUNGAN</a></li>
             <?php
               if(!$_SESSION){
             ?>
@@ -117,50 +98,49 @@ include "config.php";
     </header>
     <!-- End Header -->
 
-    <main id="main">
-      <!-- Article page start -->
-      <div class="article-page d-block ">
-        <div
-          class="article-heading-fluid bg-primary opacity-75 d-flex position-relative"
-          style="justify-content: center; height: 200px"
-        >
-          <h1
-            class="text-light text-start fs-3 position-absolute bottom-0 m-5"
-            style="justify-content:center;"
-          >
-            Selamat Datang di Halaman Artikel EsEmKa
-          </h1>
-        </div>
-        
-        <div class="main-content">
-        
-      <section class="kampanye">
-      <?php         
-          $data = mysqli_query($conn, "select * from tb_artikel");
-              while ($d = mysqli_fetch_array($data)) {                              
-               ?>
-                <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">    
-                      <h5 class="card-title"><?php echo $d['title']?></h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
-                      <p class="card-text"><?php echo $d['deskripsi']?></p>
-                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
-                 <?php
-                }
-            ?>
-            </section>
-            
+    <main class="calculator">
+    <section class="calculators" id="calculate">
+      <h1>Kalkulator Emisi Karbon</h1>
+      <div class="clc">
+        <img src="./src/public/image/Calculator.png" alt="">
       </div>
-      
-       
-      <!-- Article page end -->
-    </main>
-    
-    
 
+      <div class="clc-type">
+        <img src="../assets/img/bensin.png" alt="..." />
+        <p>Pemakaian Bensin (Liter)</p>
+        <input type="number" id="electricity" name="gasoline">
+      </div>
+
+      <div class="clc-type">
+        <img src="../assets/img/solar.png" alt="..." />
+        <p>Pemakaian Bensin (Liter)</p>
+        <input type="number" id="gasoline" name="gasoline">
+      </div>
+
+      <div class="clc-type">
+        <img src="../assets/img/bensin.png" alt="..." />
+        <p>Pemakaian Bensin (Liter)</p>
+        <input type="number" id="diesel" name="gasoline">
+      </div>
+
+      <button type="button" id="calculate-button">Hitung Jejak Karbon</button>
+
+      <p id="result"></p>
+
+      <!-- <label for="electricity"><img src="" alt=""></i>Pemakaian Listrik (KWh)</label>
+      <input type="number" id="electricity" name="electricity">
+
+      <label for="gasoline"><img src="" alt="">Pemakaian Bensin (Liter)</label>
+      <input type="number" id="gasoline" name="gasoline">
+
+      <label for="diesel"><img src="" alt=""> Pemakaian Solar (Liter)</label>
+      <input type="number" id="diesel" name="diesel">
+
+      <button type="button" id="calculate-button">Hitung Jejak Karbon</button>
+
+      <p id="result"></p> -->
+    </section>
+  </main>
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -168,7 +148,7 @@ include "config.php";
       <div class="container">
         <div class="row" data-aos="fade-right">
           <div class="col-md-3 mb-4">
-            <img src="../assets/img/logo-esemka.png" alt="" class="footer-logo" style="width: 90px;"/>
+            <img src="../assets/img/logo-esemka.png" alt="logo" class="footer-logo" style="width: 90px;" />
           </div>
           <div class="col-md-9 mt-4">
             <div class="row site-section pt-0">
@@ -234,7 +214,8 @@ include "config.php";
     <script src="../assets/vendor/aos/aos.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/vendor/php-email-form/validate.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>  
+    <script src="kalkulator.js"></script>
 
     <!-- Template Main JS File -->
     <script src="../assets/js/main.js"></script>

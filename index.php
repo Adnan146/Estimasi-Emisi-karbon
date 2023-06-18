@@ -66,7 +66,7 @@
             <?php
               }elseif($_SESSION['id']){
             ?>
-            <a href="./kalkulator/kalku.html">KALKULATOR</a>
+            <a href="./kalkulator/kalku.php">KALKULATOR</a>
             <?php        
               }
             ?>
