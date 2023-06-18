@@ -15,8 +15,8 @@ include "config.php";
     <meta name="author" content="EsEmKa">
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.ico" rel="icon" />
-    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../assets/img/favicon.ico" rel="icon"/>
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
 
     <!-- Google Fonts -->
     <link
@@ -41,13 +41,8 @@ include "config.php";
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="article.css">
 
-    <!-- =======================================================
-  * Template Name: SoftLand
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet"> -->
+   
   </head>
 
   <body>
@@ -133,28 +128,56 @@ include "config.php";
           </h1>
         </div>
         
-        <div class="main-content">
-        
-      <section class="kampanye">
+
+
+
+        <div class="container my-5">
+      <div class="row">
+
       <?php         
           $data = mysqli_query($conn, "select * from tb_artikel");
               while ($d = mysqli_fetch_array($data)) {                              
                ?>
-                <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">    
-                      <h5 class="card-title"><?php echo $d['title']?></h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
-                      <p class="card-text"><?php echo $d['deskripsi']?></p>
-                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
-                 <?php
-                }
+
+        <div class="col-md-3">
+          <!-- Card -->
+          <div class="card">
+
+          <!-- Card image -->
+          <img class="card-img-top" style="width: 100%; height: 100%;" src="<?php echo $d['image'] ?>" alt="Card image cap">
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title h5"><a><?php echo $d['title'] ?></a></h4>
+            <!-- Text -->
+            <p class="card-text text-justify">
+              
+            <?php
+
+              $deskripsi = $d['deskripsi'];
+              echo substr($deskripsi, 0, 100);
+
             ?>
-            </section>
             
+            </p>
+            <!-- Button -->
+            <a href="vacation-full.php?id=<?php echo $d['link']; ?>" class="btn btn-warning">Selengkapnya</a>
+
+          </div>
+
+          </div>
+          <!-- Card -->
+        </div>
+
+        <?php 
+          }
+        ?>                                         
+
       </div>
+    </div>
+       
       
        
       <!-- Article page end -->
