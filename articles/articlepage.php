@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+
+<?php
+session_start();
+include "config.php";
+?>
+?><!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,7 +14,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/favicon.ico" rel="icon" />
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -61,7 +66,6 @@
           <li><a href="../index.php" >BERANDA</a></li>
             <li>
               <?php
-               session_start();
               if(!$_SESSION){
             ?>
             <a href="../Login/login.php">KALKULATOR</a>
@@ -129,118 +133,28 @@
         </div>
         
         <div class="main-content">
-      <section class="artikel">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">Selengkapnya</a>
+        <?php         
+          $data = mysqli_query($conn, "select * from tb_artikel");
+         while ($d = mysqli_fetch_array($data)) {                              
+          ?>
+      <section class="kampanye">
+                <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
+                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">    
+                      <h5 class="card-title"><?php echo $d['title']?></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
+                      <p class="card-text"><?php echo $d['deskripsi']?></p>
+                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">Selengkapnya</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-4">
-            <div class="card shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" >
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">Selengkapnya</a>
-                    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                 
+            </section>
+            <?php
+        }
+    ?>
       </div>
-
-        <!-- <div class="container p-5 " id="article-page">
-          <div class="row grid gap-5">
-            <div class="col-7">
-              <div class="article-conten border border-info-subtle shadow p-3 mb-5 bg-body-tertiary rounded">
-                <div class="article-img col-12 d-flex align-items-center">
-                  <img src="..." alt="article" />
-                </div>
-          
-                <div class="desc-article d-block  p-4">
-                  <h2 text-ligth>Titlle</h2>
-                  <p class="text-baseline">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                    accusantium, cupiditate animi similique ipsum sint deserunt
-                    labore quidem rem quis, magnam suscipit fugit. Architecto
-                    repudiandae, libero dolorem eaque commodi doloribus! Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Repellat suscipit
-                    id placeat. Necessitatibus quae provident alias aliquid sed
-                    sequi, dolorum totam ex doloremque excepturi possimus, dolorem,
-                    blanditiis corporis autem culpa! Nobis nisi, ratione voluptate
-                    eveniet fuga tempora illo sit temporibus non tenetur nostrum
-                    eligendi dolorem dicta excepturi sequi quae culpa expedita quo
-                    ut iusto. Ea tempore laborum debitis quisquam sed. Nostrum,
-                    minima cupiditate temporibus non nulla ex. Eligendi aliquid
-                    numquam, temporibus est voluptate vitae repellendus quo labore
-                    autem ea, natus praesentium perspiciatis deleniti impedit
-                    aliquam, distinctio iusto quae error ipsam. Dolores quam
-                    repellendus perferendis recusandae ex voluptates labore enim
-                    corrupti, vitae sequi aspernatur ullam excepturi impedit dolor
-                    vel nisi eveniet, aliquid illo rem. Quasi atque natus a harum
-                    nisi reprehenderit. Consectetur laborum, corporis alias
-                    doloremque ipsum in, mollitia obcaecati, ad vero nobis illum
-                    quam itaque a illo ut. Numquam amet repellendus sed, omnis a
-                    sapiente ea mollitia sunt sit voluptates?
-                  </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="col-4">
-              <aside>
-                <div class="col mb-3 ">
-                    <div class="card shadow p-3 mb-5 bg-body-tertiary rounded ">
-                      <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Apa itu carbon</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                  <div class="card shadow p-3 mb-5 bg-body-tertiary rounded ">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mengapa ini penting</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="col mb-3">
-                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Artikel Tentang Carbon</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-            </div>
-              </aside>
-            </div>
-          </div>
-        </div> -->
+      
+       
       <!-- Article page end -->
     </main>
     

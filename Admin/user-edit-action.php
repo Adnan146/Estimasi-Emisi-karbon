@@ -11,7 +11,7 @@ $password = $_POST['password'];
 $level = $_POST['level'];
 
 // update data ke database
-mysqli_query($conn, "update tb_user set name='$name', username='$username', email='$email', password='$password', link='$link' where id'$id'");
+mysqli_query($conn, "UPDATE tb_user SET name='$name', username='$username', email='$email', password='$password', level='$level' where id='$id'");
 
 // mengalihkan halaman kembali ke index.php
 header("location:user.php");

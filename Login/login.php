@@ -44,26 +44,28 @@ if(isset($_POST["submit"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
+    <link href="../assets/img/favicon.ico" rel="icon" />
+    <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
   </head>
   <body>
 
   <div class="container">
   <div class="box form-box">
-  <h2>Login</h2>
+  <h2>Masuk</h2>
     <form action="" method="post" >
     <div class="field input">
-      <label for="usernameemail">Username or Email : </label>
+      <label for="usernameemail">Username or Email  </label>
       <input type="text" name="usernameemail" id = "usernameemail" required value=""> <br>
     </div>
     <div class="field input">
-      <label for="password">Password : </label>
+      <label for="password">Password  </label>
       <input type="password" name="password" id = "password" required value=""> <br>
     </div>
     <div class="field">
       <button type="submit" class="btn" name="submit">Masuk</button>
     </div>
     <div class="links">
-      Sudah memiliki akun? <a href="registration.php">Daftar Now</a>
+      Sudah memiliki akun? <a href="registration.php">Daftar Now</a><br><br>
       Kembali ke halaman utama?<a href="../index.php">Beranda</a>
     </div>
     </form>

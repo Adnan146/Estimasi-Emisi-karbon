@@ -1,3 +1,7 @@
+<?php
+session_start();
+include "config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +13,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="../assets/img/favicon.png" rel="icon" />
+    <link href="../assets/img/favicon.ico" rel="icon" />
     <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
@@ -70,18 +74,17 @@
             <li><a href="../articles/articlepage.php">ARTIKEL</a></li>
             <li><a href="./aksi.php" class="active">AKSI LINGKUNGAN</a></li>
             <?php
-              session_start();
               if(!$_SESSION){
             ?>
             <li>
-              <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
+            <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/login.php'">
                 MASUK
               </button>
           </li>
           <?php
               }elseif($_SESSION['level'] == "user"){
             ?>
-             <button type="button" class="btn btn-success rounded-5" onclick="window.location.href='../Login/logout.php'">
+             <button type="button" class="btn btn-success rounded-5 btn-logout" onclick="window.location.href='../Login/logout.php'">
                 KELUAR
               </button>
             <?php
@@ -110,84 +113,57 @@
             </div>
           </div>
         </div>
-
+       
         <div class="main-content">
             <div class="titlle-main-content">
                 <h3>Kampanye Aksi Lingkungan</h3>
             </div>
+            <?php
+          $data = mysqli_query($conn, "select * from tb_aksi");
+         while ($d = mysqli_fetch_array($data)) {                            
+          ?>
             <section class="kampanye">
                 <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
+                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
+                    <div class="card-body">    
+                      <h5 class="card-title"><?php echo $d['title']?></h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
+                      <p class="card-text"><?php echo $d['deskripsi']?></p>
+                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
                     </div>
                   </div>
-                  <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>    
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
-                  <div class="card  m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="../assets/img/img_4.jpg" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">
-                      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>  
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
+                 
             </section>
-
+          <?php
+         }
+          ?>
             <div class="titlle-main-content">
                 <h3>Artikel Terbaru</h3>
             </div>
+            <?php
+          $data = mysqli_query($conn, "select * from tb_aksi");
+         while ($d = mysqli_fetch_array($data)) {                            
+          ?>
             <section class="article-short">
                <div class="article-short-wrap">
                    <div class="article-image">
-                       <img src="../assets/img/person_2.jpg" alt="..." />
+                       <img src="<?php echo $d['image']?>" alt="..." />
                    </div>
                    <div class="article-news">
-                       <h4 class><a href="...">TITTLE</a></h4>
-                       <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                        Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                       <h4 class><?php echo $d['title']?></h4>
+                       <p><?php echo $d['deskripsi']?></p>
+                        <p class="card-text"><small class="text-muted"><?php echo $d['date']?></small></p>
                    </div>
                </div>
-               <div class="article-short-wrap">
-                <div class="article-image">
-                    <img src="../assets/img/person_2.jpg" alt="..." />
-                </div>
-                <div class="article-news">
-                    <h4><a href="...">TITTLE</a></h4>
-                    <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                     Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            <div class="article-short-wrap">
-                <div class="article-image">
-                    <img src="../assets/img/person_2.jpg" alt="..." />
-                </div>
-                <div class="article-news">
-                    <h4><a href="...">TITTLE</a></h4>
-                    <p>Lorem ipsum is the filler text that typically demonstrates the font and style of a text in a document or visual demonstration. It serves as a place holder indicating where the text will be in the final iteration.
-                     Originally from Latin, Lorem ipsum has no intelligible meaning. It is simply a display of letters to be viewed as a sample with given graphical elements in a file. Lipsum" (a portmanteau of lorem and ipsum) generators are commonly used to form generic text in a file. The words are adequately like normal text to demonstrate a font, without distracting the reader with its content.</p>
-                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
 
             <div class="load-more">
-                <button type="button" class="btn-article"><a href="../articles/articlepage.html">LOAD MORE</a></button>
+                <button type="button" class="btn-article"><a href="<?php echo $d['link']?>">LOAD MORE</a></button>
             </div>
             
             </section>
+            <?php
+         }
+            ?>
         </div>
     </main>
     <!-- End #main -->

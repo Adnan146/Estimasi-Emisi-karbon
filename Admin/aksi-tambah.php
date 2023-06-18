@@ -28,22 +28,23 @@
 
                             <!-- Main content -->
                             <form class="form-horizontal style-form" style="margin-top: 10px;" action="aksi-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-2 control-label">Link Picture</label>
-                                    <div class="col-sm-6">
-                                        <input name="image" type="text" class="form-control" placeholder="Link Image" required />
-                                    </div>
-                                </div>
+                                
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Judul Aksi</label>
                                     <div class="col-sm-6">
-                                        <input name="title" class="form-control" type="text" placeholder="Judul Aksi" required />
+                                        <input name="title" class="form-control" type="text" placeholder="Judul Artikel" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Deskripsi Aksi</label>
                                     <div class="col-sm-6">
-                                        <input name="deskripsi" class="form-control" type="text" placeholder="Deskripsi Aksi" required />
+                                        <input name="deskripsi" class="form-control" type="text" placeholder="Deskripsi Artikel" required />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-sm-2 control-label">Link Picture</label>
+                                    <div class="col-sm-6">
+                                        <input name="image" type="text" class="form-control" placeholder="Link Image" required />
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -55,7 +56,7 @@
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Link Aksi</label>
                                     <div class="col-sm-6">
-                                    <input type="text" name="link" class="form-control" placeholder="link Aksi" required />
+                                    <input type="text" name="link" class="form-control" placeholder="link Artikel" required />
                                     </div>
                                 </div>
                                 <div class="form-group" style="margin-bottom: 20px;">

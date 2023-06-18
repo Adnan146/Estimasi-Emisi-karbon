@@ -35,7 +35,7 @@
 
                             <!-- </div> -->
                             <div class="panel-body">
-                                <form class="form-horizontal style-form" style="margin-top: 20px;" action="edit_aksi.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                                <form class="form-horizontal style-form" style="margin-top: 20px;" action="user-edit-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">ID User</label>
                                         <div class="col-sm-8">
@@ -71,7 +71,11 @@
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">Level</label>
                                         <div class="col-sm-8">
-                                            <input name="level" class="form-control" id="level" type="text" value="<?php echo $data['level']; ?>" required />
+                                        <select id="level" name="level" class="form-control">
+                                        <option value="<?php echo $data['level']; ?>"><?php echo $data['level']; ?></option>
+                                        <option value="admin">admin</option>
+                                        <option value="user">user</option>
+                                    </select>
                                         </div>
                                     </div>
                                     <div class="form-group" style="margin-bottom: 20px;">

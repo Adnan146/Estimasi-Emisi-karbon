@@ -28,12 +28,7 @@
 
                             <!-- Main content -->
                             <form class="form-horizontal style-form" style="margin-top: 10px;" action="artikel-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-                                <div class="form-group">
-                                    <label class="col-sm-2 col-sm-2 control-label">Link Picture</label>
-                                    <div class="col-sm-6">
-                                        <input name="image" type="text" class="form-control" placeholder="Link Image" required />
-                                    </div>
-                                </div>
+                                
                                 <div class="form-group">
                                     <label class="col-sm-2 col-sm-4 control-label">Judul Artikel</label>
                                     <div class="col-sm-6">
@@ -44,6 +39,12 @@
                                     <label class="col-sm-2 col-sm-4 control-label">Deskripsi Artikel</label>
                                     <div class="col-sm-6">
                                         <input name="deskripsi" class="form-control" type="text" placeholder="Deskripsi Artikel" required />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-sm-2 control-label">Link Picture</label>
+                                    <div class="col-sm-6">
+                                        <input name="image" type="text" class="form-control" placeholder="Link Image" required />
                                     </div>
                                 </div>
                                 <div class="form-group">

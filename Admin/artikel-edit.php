@@ -25,38 +25,41 @@
                             <h6 class="m-0 font-weight-bold text-primary">Edit Artikel</h6>
                         </div>
                         <div class="card-body">
-                        <?php
-                            include("config_fb.php");
-                            include("firebaseRDB.php");
 
-                            $db = new firebaseRDB($databaseURL);
+                            <?php
+                            include 'config.php';
                             $id = $_GET['id'];
-                            $retrieve = $db->retrieve("konten/$id");
-                            $data = json_decode($retrieve, 1);
-
+                            $query = mysqli_query($conn, "select * from tb_artikel where id='$id'");
+                            $data  = mysqli_fetch_array($query);
                             ?>
 
                             <!-- </div> -->
                             <div class="panel-body">
                                 <form class="form-horizontal style-form" style="margin-top: 20px;" action="artikel-edit-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
-
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">ID User</label>
+                                        <div class="col-sm-8">
+                                            <input name="id" type="text" id="id" class="form-control" value="<?php echo $data['id']; ?>" readonly />
+                                            <!--<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>-->
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">Judul Artikel</label>
                                         <div class="col-sm-8">
-                                            <input name="title" type="text" id="title" class="form-control" value="<?php echo $data['title']?>" required />
+                                            <input name="title" type="text" id="title" class="form-control" value="<?php echo $data['title']; ?>" required />
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Link Picture</label>
-                                        <div class="col-sm-8">
-                                            <input name="image" class="form-control" id="image" type="text" value="<?php echo $data['image']; ?>" required />
-                                        </div>
-                                    </div>
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">Deskripsi Artikel</label>
                                         <div class="col-sm-8">
                                             <input name="deskripsi" class="form-control" id="deskripsi" type="text" value="<?php echo $data['deskripsi']; ?>" required />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 col-sm-2 control-label">Image</label>
+                                        <div class="col-sm-8">
+                                            <input name="image" class="form-control" id="image" type="text" value="<?php echo $data['image']; ?>" required />
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -66,7 +69,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="col-sm-2 col-sm-2 control-label">Link Artikel</label>
+                                        <label class="col-sm-2 col-sm-2 control-label">Link</label>
                                         <div class="col-sm-8">
                                             <input name="link" class="form-control" id="link" type="text" value="<?php echo $data['link']; ?>" required />
                                         </div>
@@ -79,6 +82,8 @@
                                     </div>
                                     <div style="margin-top: 20px;"></div>
                                 </form>
+                            </div>
+
                             </div>
 
                         </div>
