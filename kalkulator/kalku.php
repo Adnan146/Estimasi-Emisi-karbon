@@ -100,46 +100,57 @@ include "config.php";
     <!-- End Header -->
 
     <main class="calculator">
+    <main class="calculator">
     <section class="calculators" id="calculate">
-      <h1>Kalkulator Emisi Karbon</h1>
-      <div class="clc">
-        <img src="./src/public/image/Calculator.png" alt="">
+      <div class="container">
+        <div class="row mb-5 align-items-end">
+          <div class="col-md-12 text-center" data-aos="fade-up">
+            <h1 style="margin-top:200px;">Kalkulator Emisi Karbon</h1>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 ms-auto" data-aos="fade-up"></div>
+          <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+
+              <div class="row">
+              <div class="clc-type text-center">
+                <img src="../assets/img/bensin.png" alt="">
+              </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Pemakaian Listrik</label>
+                  <input type="number" id="electricity" name="gasoline" class="form-control" required>
+                </div>
+                <div class="clc-type text-center">
+                  <img src="../assets/img/solar.png" alt="">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Pemakaian Bensin</label>
+                  <input type="number" id="gasoline" name="gasoline" class="form-control" required>
+                </div>
+                <div class="clc-type text-center">
+                  <img src="../assets/img/solar.png" alt="">
+                </div>
+                <div class="col-md-12 form-group">
+                  <label for="name">Pemakaian Diesel</label>
+                  <input type="number" id="diesel" name="gasoline" class="form-control" required>
+                </div>
+
+
+                <div class="col-md-12 form-group">
+                  <button type="button" class="btn btn-warning d-block w-100 mt-4 pt-4" id="calculate-button">Hitung Jejak Karbon</button>
+                  <p class="mt-5 mb-5" id="result"></p>
+                </div>
+              </div>
+              
+            </form>
+          </div>
+          <div class="col-md-3 ms-auto" data-aos="fade-up"></div>
+
+        </div>
       </div>
-
-      <div class="clc-type">
-        <img src="../assets/img/bensin.png" alt="..." />
-        <p>Pemakaian Bensin (Liter)</p>
-        <input type="number" id="electricity" name="gasoline">
-      </div>
-
-      <div class="clc-type">
-        <img src="../assets/img/solar.png" alt="..." />
-        <p>Pemakaian Bensin (Liter)</p>
-        <input type="number" id="gasoline" name="gasoline">
-      </div>
-
-      <div class="clc-type">
-        <img src="../assets/img/bensin.png" alt="..." />
-        <p>Pemakaian Bensin (Liter)</p>
-        <input type="number" id="diesel" name="gasoline">
-      </div>
-
-      <button type="button" id="calculate-button">Hitung Jejak Karbon</button>
-
-      <p id="result"></p>
-
-      <!-- <label for="electricity"><img src="" alt=""></i>Pemakaian Listrik (KWh)</label>
-      <input type="number" id="electricity" name="electricity">
-
-      <label for="gasoline"><img src="" alt="">Pemakaian Bensin (Liter)</label>
-      <input type="number" id="gasoline" name="gasoline">
-
-      <label for="diesel"><img src="" alt=""> Pemakaian Solar (Liter)</label>
-      <input type="number" id="diesel" name="diesel">
-
-      <button type="button" id="calculate-button">Hitung Jejak Karbon</button>
-
-      <p id="result"></p> -->
     </section>
   </main>
     <!-- End #main -->
