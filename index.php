@@ -6,7 +6,7 @@
 
     <title>Esemka | Estimasi Emisi Karbons</title>
     <meta name="description" content="estimasi emisi karbon">
-    <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
+    <meta name="keywords" content="estimasi emisi karbon">
     <meta name="author" content="EsEmKa">
 
     <!-- Favicons -->
@@ -186,10 +186,6 @@
               <h2 class="article-title">
                 Mengetahui Tentang Dampak Emisi Karbon
               </h2>
-              <p class="article-subtitle mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tenetur at reprehenderit optio
-              </p>
               <div class="row">
                 <div class="d-flex">
                   <div class="article-icon">
@@ -201,8 +197,10 @@
                   <div>
                     <p class="article-list-title">Apa itu Carbon</p>
                     <p class="article-list-desc">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Corrupti, a.
+                    Karbon merupakan unsur kimia yang mempunyai simbol C 
+                    dan nomor atom 6 pada tabel periodik. Unsur ini 
+                     dalam golongan non-logam dan memiliki valensi 4, 
+                     yang berarti ada 4 elektron yang membentuk ikatan kovalen. 
                     </p>
                   </div>
                 </div>
@@ -220,8 +218,7 @@
                       Mengapa ini sangat penting?
                     </p>
                     <p class="article-list-desc">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptatum, at?
+                    Emisi karbon berdampak terhadap perubahan iklim global. 
                     </p>
                   </div>
                   <p></p>
@@ -240,8 +237,8 @@
                       Artikel tentang Emisi Karbon
                     </p>
                     <p class="article-list-desc">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Dolores, nesciunt.
+                    Emisi karbon disebabkan oleh aktivitas pembakaran
+                     senyawa-senyawa yang mengandung karbon. 
                     </p>
                   </div>
                 </div>

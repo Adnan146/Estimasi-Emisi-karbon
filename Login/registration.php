@@ -45,34 +45,34 @@ if(isset($_POST["submit"])){
   <body>
   <div class="container">
     <div class="box form-box">
-    <h2>Sign Up</h2>
+    <h2>Daftar</h2>
     <form action="" method="post">
     <div class="field input">
-      <label for="name">Name </label>
-      <input type="text" name="name" id = "name" required value=""> <br>
+      <label for="name">Nama </label>
+      <input type="text" name="name" id = "name" required value="">
     </div>
     <div class="field input">  
-      <label for="username">Username  </label>
-      <input type="text" name="username" id = "username" required value=""> <br>
+      <label for="username">Nama Pengguna</label>
+      <input type="text" name="username" id = "username" required value="">
     </div>
     <div class="field input">  
-      <label for="email">Email  </label>
-      <input type="email" name="email" id = "email" required value=""> <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id = "email" required value="">
     </div>
     <div class="field input">  
       <label for="password">Password </label>
-      <input type="password" name="password" id = "password" required value=""> <br>
+      <input type="password" name="password" id = "password" required value="">
     </div>
     <div class="field input">  
-      <label for="confirmpassword">Confirm Password  </label>
-      <input type="password" name="confirmpassword" id = "confirmpassword" required value=""> <br>
+      <label for="confirmpassword">Konfirmasi Password  </label>
+      <input type="password" name="confirmpassword" id = "confirmpassword" required value="">
     </div>
     
     <div class="field">   
         <input type="submit" class="btn" name="submit" value="Daftar" required>
       </div>
       <div class="links">
-        Already a member? <a href="login.php">Sign In</a>
+       Sudah Mendaftar akun? <a href="login.php">Masuk</a>
       </div>
     </form>
     </div>

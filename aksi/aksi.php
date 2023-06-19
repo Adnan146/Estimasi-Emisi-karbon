@@ -110,7 +110,8 @@ include "config.php";
             </div>
      
             <div class="btn-jumbo-container">
-             <a href="#aksi"><button class="btn-jumbo" type="submit">SAKSIKAN DISINI</button></a>
+             <button class="btn-jumbo" type="submit" onclick="window.location.href='#aksi'">
+             SAKSIKAN DISINI</button>
             </div>
           </div>
         </div>
@@ -149,7 +150,7 @@ include "config.php";
                 <h3>Artikel Terbaru</h3>
             </div>
             <?php
-          $data = mysqli_query($conn, "select * from tb_aksi");
+          $data = mysqli_query($conn, "select * from tb_artikel");
          while ($d = mysqli_fetch_array($data)) {                            
           ?>
             <section class="article-short">
