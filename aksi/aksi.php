@@ -166,7 +166,7 @@ include "config.php";
                </div>
 
             <div class="load-more">
-                <button type="button" class="btn-article"><a href="<?php echo $d['link']?>">LOAD MORE</a></button>
+                <button type="button" class="btn-article"><a href="<?php echo $d['link']?>">Selengkapnya</a></button>
             </div>
             
             </section>

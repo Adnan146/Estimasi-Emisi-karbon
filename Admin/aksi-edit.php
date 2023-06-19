@@ -35,7 +35,7 @@
 
                             <!-- </div> -->
                             <div class="panel-body">
-                                <form class="form-horizontal style-form" style="margin-top: 20px;" action="artikel-edit-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                                <form class="form-horizontal style-form" style="margin-top: 20px;" action="aksi-edit-action.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
                                     <div class="form-group">
                                         <label class="col-sm-2 col-sm-2 control-label">ID Aksi</label>
                                         <div class="col-sm-8">
