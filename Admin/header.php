@@ -2,6 +2,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="dicoding:email" content="juslifatuladnan@gmail.com">
     <meta name="description" content="estimasi emisi karbon">
     <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
     <meta name="author" content="EsEmKa">

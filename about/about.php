@@ -6,6 +6,7 @@
     <title>About EsEmKa | Estimasi Emisi Karbon</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="estimasi emisi karbon">
+    <meta name="dicoding:email" content="juslifatuladnan@gmail.com">
     <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
     <meta name="author" content="EsEmKa">
     <!-- Favicon -->

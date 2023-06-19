@@ -12,6 +12,7 @@ include "config.php";
     <title>Esemka | Estimasi Emisi Karbons</title>
     <meta name="description" content="estimasi emisi karbon">
     <meta name="keywords" content="estimasi emisi karbon">
+    <meta name="dicoding:email" content="juslifatuladnan@gmail.com">
     <meta name="author" content="EsEmKa">
 
     <!-- Favicons -->

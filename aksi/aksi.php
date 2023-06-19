@@ -9,6 +9,7 @@ include "config.php";
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>Esemka | Estimasi Emisi Karbons</title>
+    <meta name="dicoding:email" content="juslifatuladnan@gmail.com">
     <meta name="description" content="estimasi emisi karbon">
     <meta name="keywords" content="EsEmKA, estimasi emisi karbon">
     <meta name="author" content="EsEmKa">
@@ -46,13 +47,6 @@ include "config.php";
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link href="../aksi/aksi.css" rel="stylesheet"/>
 
-    <!-- =======================================================
-  * Template Name: SoftLand
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body>
