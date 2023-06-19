@@ -110,34 +110,41 @@ include "config.php";
             </div>
      
             <div class="btn-jumbo-container">
-             <button class="btn-jumbo" type="submit">SAKSIKAN DISINI</button>
+             <a href="#aksi"><button class="btn-jumbo" type="submit">SAKSIKAN DISINI</button></a>
             </div>
           </div>
         </div>
        
-        <div class="main-content">
+        <div class="main-content" id="aksi">
             <div class="titlle-main-content">
                 <h3>Kampanye Aksi Lingkungan</h3>
             </div>
-            <?php
+            <div class="container my-5">
+      <div class="row">
+
+      <?php         
           $data = mysqli_query($conn, "select * from tb_aksi");
-         while ($d = mysqli_fetch_array($data)) {                            
-          ?>
-            <section class="kampanye">
-                <div class="card m-3 shadow p-3 mb-5 bg-body rounded border border-success p-2 border-opacity-10" style="width: 351px;">
-                    <img src="<?php echo $d['image']?>" class="card-img-top" style="height:250px ;" alt="...">
-                    <div class="card-body">    
-                      <h5 class="card-title"><?php echo $d['title']?></h5>
-                      <h6 class="card-subtitle mb-2 text-muted"><?php echo $d['date']?></h6>
-                      <p class="card-text"><?php echo $d['deskripsi']?></p>
-                      <a href="<?php echo $d['link']?>" class="btn btn-warning">IKUT BERAKSI</a>
-                    </div>
-                  </div>
-                 
-            </section>
-          <?php
-         }
-          ?>
+              while ($d = mysqli_fetch_array($data)) {                              
+               ?>
+
+        <div class="col-md-3">
+          <div class="card">
+          <img class="card-img-top" style="width: 100%; height: 100%;" src="<?php echo $d['image'] ?>" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title h5"><a><?php echo $d['title'] ?></a></h4>
+            <p class="card-text text-justify"><?php echo $d['date'] ?>
+            </p>
+            <p class="card-text text-justify"><?php echo $d['deskripsi'] ?>
+            </p>
+            <a href="<?php echo $d['link']; ?>" target="blank" class="btn btn-warning">Selengkapnya</a>
+          </div>
+          </div>
+        </div>
+        <?php 
+          }
+        ?>                                         
+      </div>
+    </div> 
             <div class="titlle-main-content">
                 <h3>Artikel Terbaru</h3>
             </div>

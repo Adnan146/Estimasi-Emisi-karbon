@@ -120,21 +120,21 @@ include "config.php";
                 <img src="../assets/img/bensin.png" alt="">
               </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Pemakaian Listrik</label>
+                  <label for="name">Pemakaian Listrik (Kwh)</label>
                   <input type="number" id="electricity" name="gasoline" class="form-control" required>
                 </div>
                 <div class="clc-type text-center">
                   <img src="../assets/img/solar.png" alt="">
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Pemakaian Bensin</label>
+                  <label for="name">Pemakaian Bensin (Liter)</label>
                   <input type="number" id="gasoline" name="gasoline" class="form-control" required>
                 </div>
                 <div class="clc-type text-center">
                   <img src="../assets/img/solar.png" alt="">
                 </div>
                 <div class="col-md-12 form-group">
-                  <label for="name">Pemakaian Diesel</label>
+                  <label for="name">Pemakaian Diesel(Liter)</label>
                   <input type="number" id="diesel" name="gasoline" class="form-control" required>
                 </div>
 

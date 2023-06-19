@@ -124,7 +124,7 @@
             <p class="mb-4" data-aos="fade-right" data-aos-delay="100">Ikut serta dalam upaya nyata pengurangan CO2 dan membuat dampak kebaikan untuk kelestarian
               bumi dan keberlangsungan kehidupan
             </p>
-            <p data-aos="fade-right"><button class="btn btn-warning pr-5 rounded-5">MULAI</button></p>
+            <p data-aos="fade-right"><a href="#main"><button class="btn btn-warning pr-5 rounded-5">MULAI</button></a></p>
           </div>
           <div class="col-lg-5 hero-pic">
               <img src="./assets/img/net zero-pana 1.png" alt="" data-aos="fade-right" >
@@ -141,15 +141,20 @@
               <p class="know-about">TENTANG ESEMKA</p>
               <h2 class="know-about-title mb-4">Estimasi Emisi Karbon</h2>
               <p class="know-about-description mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Tenetur at reprehenderit optio, laudantium eius quod, eum maxime
-                molestiae porro omnis. Dolores aspernatur delectus impedit
-                incidunt dolore mollitia esse natus beatae.
+              Di Esemka, kami memiliki kepedulian yang tinggi terhadap masalah 
+              serius emisi karbon dan dampaknya terhadap lingkungan. Perjalanan
+               kami dimulai sebagai proyek capstone dalam program MSIB Kampus 
+               Merdeka, yang memberikan kami kesempatan untuk mengaplikasikan 
+               pengetahuan dan keterampilan kami dalam menciptakan solusi inovatif.
               </p>
               <p class="know-about-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda incidunt earum voluptate maiores eveniet recusandae
-                rerum veritatis accusamus ipsa ipsum?
+              Tujuan utama EsEmKa adalah untuk meningkatkan kesadaran
+               masyarakat akan dampak emisi karbon. Sadar akan dampak 
+               emisi karbon mengajak kita untuk mengubah perilaku dan 
+               mengambil tindakan berkelanjutan, seperti mengurangi 
+               konsumsi energi fosil, beralih ke sumber energi terbarukan,
+                mendukung transportasi ramah lingkungan, dan menerapkan 
+                praktik keberlanjutan dalam kehidupan sehari-hari.
               </p>
               <button type="button" class="btn btn-warning rounded-5 mt-3">
                 <a href="./about/about.php" class="text-light">Selengkapnya</a>

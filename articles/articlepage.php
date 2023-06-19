@@ -140,41 +140,22 @@ include "config.php";
                ?>
 
         <div class="col-md-3">
-          <!-- Card -->
           <div class="card">
-
-          <!-- Card image -->
           <img class="card-img-top" style="width: 100%; height: 100%;" src="<?php echo $d['image'] ?>" alt="Card image cap">
-
-          <!-- Card content -->
           <div class="card-body">
-
-            <!-- Title -->
             <h4 class="card-title h5"><a><?php echo $d['title'] ?></a></h4>
-            <!-- Text -->
-            <p class="card-text text-justify">
-              
-            <?php
-
-              $deskripsi = $d['deskripsi'];
-              echo substr($deskripsi, 0, 100);
-
-            ?>
-            
+            <p class="card-text text-justify"><?php echo $d['date'] ?>
             </p>
-            <!-- Button -->
-            <a href="vacation-full.php?id=<?php echo $d['link']; ?>" class="btn btn-warning">Selengkapnya</a>
-
+            <p class="card-text text-justify"><?php echo $d['deskripsi'] ?>
+            </p>
+            <a href="<?php echo $d['link']; ?>" target="blank" class="btn btn-warning">Selengkapnya</a>
+          </div>
           </div>
 
-          </div>
-          <!-- Card -->
         </div>
-
-        <?php 
+    <?php 
           }
         ?>                                         
-
       </div>
     </div>
        
