@@ -117,14 +117,14 @@ include "config.php";
 
               <div class="row">
               <div class="clc-type text-center">
-                <img src="../assets/img/bensin.png" alt="">
+                <img src="../assets/img/" alt="listrik" style="width:25px">
               </div>
                 <div class="col-md-12 form-group">
                   <label for="name">Pemakaian Listrik (Kwh)</label>
                   <input type="number" id="electricity" name="gasoline" class="form-control" required>
                 </div>
                 <div class="clc-type text-center">
-                  <img src="../assets/img/solar.png" alt="">
+                  <img src="../assets/img/bensin.png" alt="">
                 </div>
                 <div class="col-md-12 form-group">
                   <label for="name">Pemakaian Bensin (Liter)</label>
